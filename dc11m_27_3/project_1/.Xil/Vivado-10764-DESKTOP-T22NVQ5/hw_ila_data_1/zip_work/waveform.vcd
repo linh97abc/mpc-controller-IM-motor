@@ -1,0 +1,34 @@
+$date
+        2020-Jun-13 15:19:10
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " design_1_i/fix_clk_i_w_0_sample_w $end
+$var reg 1 # design_1_i/fix_clk_i_w_0_sample_i $end
+$var reg 16 $ design_1_i/usample_2_dout [15:0] $end
+$var reg 20 4 design_1_i/Controler_0_IaRef_out [19:0] $end
+$var reg 20 H design_1_i/Controler_0_IbRef_out [19:0] $end
+$var reg 20 \ design_1_i/ab2alphabeta_0_alpha [19:0] $end
+$var reg 20 p design_1_i/ab2alphabeta_0_beta [19:0] $end
+$var reg 20 &" design_1_i/encoder_0_speed [19:0] $end
+$var reg 20 :" design_1_i/datalimit_0_data_out [19:0] $end
+$var reg 20 N" design_1_i/usample_1_dout [19:0] $end
+$var reg 20 b" design_1_i/usample_0_dout [19:0] $end
+$var reg 20 v" design_1_i/Controler_0_Pd_out [19:0] $end
+$var reg 20 ,# design_1_i/ADC_0_data_adc_A [19:0] $end
+$var reg 20 @# design_1_i/ADC_0_data_adc_B [19:0] $end
+$var reg 20 T# design_1_i/usample_3_dout [19:0] $end
+$var reg 20 h# design_1_i/usample_4_dout [19:0] $end
+$var reg 10 |# design_1_i/usample_5_dout [9:0] $end
+$var reg 10 ($ design_1_i/usample_6_dout [9:0] $end
+$var reg 10 2$ design_1_i/usample_7_dout [9:0] $end
+$var reg 1 <$ _TRIGGER $end
+$var reg 1 =$ _WINDOW $end
+$var reg 1 >$ _GAP $end
+$upscope $end
+$enddefinitions $end

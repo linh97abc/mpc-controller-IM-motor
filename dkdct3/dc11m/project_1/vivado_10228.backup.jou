@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 18 14:41:00 2020
+# Process ID: 10228
+# Current directory: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11884 C:\Users\linh9\Desktop\src_dk_lockalman\dc11m\project_1\project_1.xpr
+# Log file: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/vivado.log
+# Journal file: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/project_1.xpr
+open_bd_design {C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+add_files -norecurse C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/loc_toc_do/loc_bac_1.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top loc_bac_1 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source loc_bac_1.tcl
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+add_force {/loc_bac_1/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 1 us
+run 1 us
+add_force {/loc_bac_1/rst} -radix hex {0 0ns}
+run all
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+add_bp {C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/loc_toc_do/loc_bac_1.vhd} 27
+run all
+run all
+run all
+restart
+run 1 us
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+add_force {/loc_bac_1/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+remove_bps -file {C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/loc_toc_do/loc_bac_1.vhd} -line 27
+run 1 us
+run 1 us
+relaunch_sim
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+restart
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+run 1 us
+add_force {/loc_bac_1/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/loc_bac_1/din} -radix hex {1000 0ns}
+run 1 us
+run 1 us
+add_force {/loc_bac_1/rst} -radix hex {0 0ns}
+run 1 us
+relaunch_sim
+add_force {/loc_bac_1/rst} -radix hex {1 0ns}
+add_force {/loc_bac_1/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/loc_bac_1/din} -radix hex {1000 0ns}
+run 1 us
+add_force {/loc_bac_1/rst} -radix hex {0 0ns}
+run 1 us
+run 1 us
+run 1 us
+add_force {/loc_bac_1/din} -radix dec {-2000 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+update_module_reference design_1_Controler_0_0
+update_module_reference design_1_Controler_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

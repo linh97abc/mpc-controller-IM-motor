@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z020_1" gui_info="dashboard1=hw_ila_1[xc7z020_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_1/Settings=ILA_SETTINGS_1;],dashboard2=hw_ila_2[xc7z020_1/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_2/Settings=ILA_SETTINGS_1;xc7z020_1/hw_ila_2/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_2/Status=ILA_STATUS_1;xc7z020_1/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/design_1_wrapper.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="design_1_i/ila_0" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="design_1_i/ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="hw_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="hw_ila_2" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="design_1_i/fix_clk_i_w_0_sample_i" gui_info="Capture Setup=1"/>
+    <Object name="design_1_i/fix_clk_i_w_0_sample_w" gui_info="Capture Setup=2"/>
+    <Object name="design_1_i/input_ctrl_0_rst" gui_info="Capture Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe13[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/ADC_0_data_adc_A[19]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[18]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[17]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[16]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[15]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[14]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[13]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[12]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[11]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[10]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[9]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[8]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[7]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[6]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[5]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[4]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[3]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[2]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[1]"/>
+        <net name="design_1_i/ADC_0_data_adc_A[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe14[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/ADC_0_data_adc_B[19]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[18]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[17]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[16]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[15]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[14]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[13]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[12]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[11]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[10]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[9]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[8]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[7]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[6]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[5]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[4]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[3]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[2]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[1]"/>
+        <net name="design_1_i/ADC_0_data_adc_B[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/Controler_0_IaRef_out[19]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[18]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[17]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[16]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[15]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[14]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[13]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[12]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[11]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[10]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[9]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[8]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[7]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[6]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[5]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[4]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[3]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[2]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[1]"/>
+        <net name="design_1_i/Controler_0_IaRef_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe5[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/Controler_0_IbRef_out[19]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[18]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[17]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[16]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[15]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[14]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[13]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[12]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[11]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[10]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[9]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[8]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[7]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[6]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[5]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[4]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[3]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[2]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[1]"/>
+        <net name="design_1_i/Controler_0_IbRef_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe12[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/Controler_0_Pd_out[19]"/>
+        <net name="design_1_i/Controler_0_Pd_out[18]"/>
+        <net name="design_1_i/Controler_0_Pd_out[17]"/>
+        <net name="design_1_i/Controler_0_Pd_out[16]"/>
+        <net name="design_1_i/Controler_0_Pd_out[15]"/>
+        <net name="design_1_i/Controler_0_Pd_out[14]"/>
+        <net name="design_1_i/Controler_0_Pd_out[13]"/>
+        <net name="design_1_i/Controler_0_Pd_out[12]"/>
+        <net name="design_1_i/Controler_0_Pd_out[11]"/>
+        <net name="design_1_i/Controler_0_Pd_out[10]"/>
+        <net name="design_1_i/Controler_0_Pd_out[9]"/>
+        <net name="design_1_i/Controler_0_Pd_out[8]"/>
+        <net name="design_1_i/Controler_0_Pd_out[7]"/>
+        <net name="design_1_i/Controler_0_Pd_out[6]"/>
+        <net name="design_1_i/Controler_0_Pd_out[5]"/>
+        <net name="design_1_i/Controler_0_Pd_out[4]"/>
+        <net name="design_1_i/Controler_0_Pd_out[3]"/>
+        <net name="design_1_i/Controler_0_Pd_out[2]"/>
+        <net name="design_1_i/Controler_0_Pd_out[1]"/>
+        <net name="design_1_i/Controler_0_Pd_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe6[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/ab2alphabeta_0_alpha[19]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[18]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[17]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[16]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[15]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[14]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[13]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[12]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[11]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[10]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[9]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[8]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[7]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[6]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[5]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[4]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[3]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[2]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[1]"/>
+        <net name="design_1_i/ab2alphabeta_0_alpha[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe7[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/ab2alphabeta_0_beta[19]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[18]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[17]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[16]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[15]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[14]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[13]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[12]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[11]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[10]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[9]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[8]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[7]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[6]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[5]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[4]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[3]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[2]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[1]"/>
+        <net name="design_1_i/ab2alphabeta_0_beta[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe9[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/datalimit_0_data_out[19]"/>
+        <net name="design_1_i/datalimit_0_data_out[18]"/>
+        <net name="design_1_i/datalimit_0_data_out[17]"/>
+        <net name="design_1_i/datalimit_0_data_out[16]"/>
+        <net name="design_1_i/datalimit_0_data_out[15]"/>
+        <net name="design_1_i/datalimit_0_data_out[14]"/>
+        <net name="design_1_i/datalimit_0_data_out[13]"/>
+        <net name="design_1_i/datalimit_0_data_out[12]"/>
+        <net name="design_1_i/datalimit_0_data_out[11]"/>
+        <net name="design_1_i/datalimit_0_data_out[10]"/>
+        <net name="design_1_i/datalimit_0_data_out[9]"/>
+        <net name="design_1_i/datalimit_0_data_out[8]"/>
+        <net name="design_1_i/datalimit_0_data_out[7]"/>
+        <net name="design_1_i/datalimit_0_data_out[6]"/>
+        <net name="design_1_i/datalimit_0_data_out[5]"/>
+        <net name="design_1_i/datalimit_0_data_out[4]"/>
+        <net name="design_1_i/datalimit_0_data_out[3]"/>
+        <net name="design_1_i/datalimit_0_data_out[2]"/>
+        <net name="design_1_i/datalimit_0_data_out[1]"/>
+        <net name="design_1_i/datalimit_0_data_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe8[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/encoder_0_speed[19]"/>
+        <net name="design_1_i/encoder_0_speed[18]"/>
+        <net name="design_1_i/encoder_0_speed[17]"/>
+        <net name="design_1_i/encoder_0_speed[16]"/>
+        <net name="design_1_i/encoder_0_speed[15]"/>
+        <net name="design_1_i/encoder_0_speed[14]"/>
+        <net name="design_1_i/encoder_0_speed[13]"/>
+        <net name="design_1_i/encoder_0_speed[12]"/>
+        <net name="design_1_i/encoder_0_speed[11]"/>
+        <net name="design_1_i/encoder_0_speed[10]"/>
+        <net name="design_1_i/encoder_0_speed[9]"/>
+        <net name="design_1_i/encoder_0_speed[8]"/>
+        <net name="design_1_i/encoder_0_speed[7]"/>
+        <net name="design_1_i/encoder_0_speed[6]"/>
+        <net name="design_1_i/encoder_0_speed[5]"/>
+        <net name="design_1_i/encoder_0_speed[4]"/>
+        <net name="design_1_i/encoder_0_speed[3]"/>
+        <net name="design_1_i/encoder_0_speed[2]"/>
+        <net name="design_1_i/encoder_0_speed[1]"/>
+        <net name="design_1_i/encoder_0_speed[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bR"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/fix_clk_i_w_0_sample_i"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/fix_clk_i_w_0_sample_w"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe0[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/input_ctrl_0_Vdc[19]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[18]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[17]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[16]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[15]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[14]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[13]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[12]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[11]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[10]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[9]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[8]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[7]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[6]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[5]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[4]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[3]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[2]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[1]"/>
+        <net name="design_1_i/input_ctrl_0_Vdc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="MAP" value="probe1[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/input_ctrl_0_Wref[19]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[18]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[17]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[16]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[15]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[14]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[13]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[12]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[11]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[10]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[9]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[8]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[7]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[6]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[5]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[4]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[3]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[2]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[1]"/>
+        <net name="design_1_i/input_ctrl_0_Wref[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_trigger" busType="net" source="netlist" spec="ILA_TRIGGER_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;b0"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/input_ctrl_0_rst"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe11[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_0_dout[19]"/>
+        <net name="design_1_i/usample_0_dout[18]"/>
+        <net name="design_1_i/usample_0_dout[17]"/>
+        <net name="design_1_i/usample_0_dout[16]"/>
+        <net name="design_1_i/usample_0_dout[15]"/>
+        <net name="design_1_i/usample_0_dout[14]"/>
+        <net name="design_1_i/usample_0_dout[13]"/>
+        <net name="design_1_i/usample_0_dout[12]"/>
+        <net name="design_1_i/usample_0_dout[11]"/>
+        <net name="design_1_i/usample_0_dout[10]"/>
+        <net name="design_1_i/usample_0_dout[9]"/>
+        <net name="design_1_i/usample_0_dout[8]"/>
+        <net name="design_1_i/usample_0_dout[7]"/>
+        <net name="design_1_i/usample_0_dout[6]"/>
+        <net name="design_1_i/usample_0_dout[5]"/>
+        <net name="design_1_i/usample_0_dout[4]"/>
+        <net name="design_1_i/usample_0_dout[3]"/>
+        <net name="design_1_i/usample_0_dout[2]"/>
+        <net name="design_1_i/usample_0_dout[1]"/>
+        <net name="design_1_i/usample_0_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe10[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_1_dout[19]"/>
+        <net name="design_1_i/usample_1_dout[18]"/>
+        <net name="design_1_i/usample_1_dout[17]"/>
+        <net name="design_1_i/usample_1_dout[16]"/>
+        <net name="design_1_i/usample_1_dout[15]"/>
+        <net name="design_1_i/usample_1_dout[14]"/>
+        <net name="design_1_i/usample_1_dout[13]"/>
+        <net name="design_1_i/usample_1_dout[12]"/>
+        <net name="design_1_i/usample_1_dout[11]"/>
+        <net name="design_1_i/usample_1_dout[10]"/>
+        <net name="design_1_i/usample_1_dout[9]"/>
+        <net name="design_1_i/usample_1_dout[8]"/>
+        <net name="design_1_i/usample_1_dout[7]"/>
+        <net name="design_1_i/usample_1_dout[6]"/>
+        <net name="design_1_i/usample_1_dout[5]"/>
+        <net name="design_1_i/usample_1_dout[4]"/>
+        <net name="design_1_i/usample_1_dout[3]"/>
+        <net name="design_1_i/usample_1_dout[2]"/>
+        <net name="design_1_i/usample_1_dout[1]"/>
+        <net name="design_1_i/usample_1_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_2_dout[15]"/>
+        <net name="design_1_i/usample_2_dout[14]"/>
+        <net name="design_1_i/usample_2_dout[13]"/>
+        <net name="design_1_i/usample_2_dout[12]"/>
+        <net name="design_1_i/usample_2_dout[11]"/>
+        <net name="design_1_i/usample_2_dout[10]"/>
+        <net name="design_1_i/usample_2_dout[9]"/>
+        <net name="design_1_i/usample_2_dout[8]"/>
+        <net name="design_1_i/usample_2_dout[7]"/>
+        <net name="design_1_i/usample_2_dout[6]"/>
+        <net name="design_1_i/usample_2_dout[5]"/>
+        <net name="design_1_i/usample_2_dout[4]"/>
+        <net name="design_1_i/usample_2_dout[3]"/>
+        <net name="design_1_i/usample_2_dout[2]"/>
+        <net name="design_1_i/usample_2_dout[1]"/>
+        <net name="design_1_i/usample_2_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe15[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_3_dout[19]"/>
+        <net name="design_1_i/usample_3_dout[18]"/>
+        <net name="design_1_i/usample_3_dout[17]"/>
+        <net name="design_1_i/usample_3_dout[16]"/>
+        <net name="design_1_i/usample_3_dout[15]"/>
+        <net name="design_1_i/usample_3_dout[14]"/>
+        <net name="design_1_i/usample_3_dout[13]"/>
+        <net name="design_1_i/usample_3_dout[12]"/>
+        <net name="design_1_i/usample_3_dout[11]"/>
+        <net name="design_1_i/usample_3_dout[10]"/>
+        <net name="design_1_i/usample_3_dout[9]"/>
+        <net name="design_1_i/usample_3_dout[8]"/>
+        <net name="design_1_i/usample_3_dout[7]"/>
+        <net name="design_1_i/usample_3_dout[6]"/>
+        <net name="design_1_i/usample_3_dout[5]"/>
+        <net name="design_1_i/usample_3_dout[4]"/>
+        <net name="design_1_i/usample_3_dout[3]"/>
+        <net name="design_1_i/usample_3_dout[2]"/>
+        <net name="design_1_i/usample_3_dout[1]"/>
+        <net name="design_1_i/usample_3_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe16[19:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_4_dout[19]"/>
+        <net name="design_1_i/usample_4_dout[18]"/>
+        <net name="design_1_i/usample_4_dout[17]"/>
+        <net name="design_1_i/usample_4_dout[16]"/>
+        <net name="design_1_i/usample_4_dout[15]"/>
+        <net name="design_1_i/usample_4_dout[14]"/>
+        <net name="design_1_i/usample_4_dout[13]"/>
+        <net name="design_1_i/usample_4_dout[12]"/>
+        <net name="design_1_i/usample_4_dout[11]"/>
+        <net name="design_1_i/usample_4_dout[10]"/>
+        <net name="design_1_i/usample_4_dout[9]"/>
+        <net name="design_1_i/usample_4_dout[8]"/>
+        <net name="design_1_i/usample_4_dout[7]"/>
+        <net name="design_1_i/usample_4_dout[6]"/>
+        <net name="design_1_i/usample_4_dout[5]"/>
+        <net name="design_1_i/usample_4_dout[4]"/>
+        <net name="design_1_i/usample_4_dout[3]"/>
+        <net name="design_1_i/usample_4_dout[2]"/>
+        <net name="design_1_i/usample_4_dout[1]"/>
+        <net name="design_1_i/usample_4_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe17[9:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_5_dout[9]"/>
+        <net name="design_1_i/usample_5_dout[8]"/>
+        <net name="design_1_i/usample_5_dout[7]"/>
+        <net name="design_1_i/usample_5_dout[6]"/>
+        <net name="design_1_i/usample_5_dout[5]"/>
+        <net name="design_1_i/usample_5_dout[4]"/>
+        <net name="design_1_i/usample_5_dout[3]"/>
+        <net name="design_1_i/usample_5_dout[2]"/>
+        <net name="design_1_i/usample_5_dout[1]"/>
+        <net name="design_1_i/usample_5_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe18[9:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_6_dout[9]"/>
+        <net name="design_1_i/usample_6_dout[8]"/>
+        <net name="design_1_i/usample_6_dout[7]"/>
+        <net name="design_1_i/usample_6_dout[6]"/>
+        <net name="design_1_i/usample_6_dout[5]"/>
+        <net name="design_1_i/usample_6_dout[4]"/>
+        <net name="design_1_i/usample_6_dout[3]"/>
+        <net name="design_1_i/usample_6_dout[2]"/>
+        <net name="design_1_i/usample_6_dout[1]"/>
+        <net name="design_1_i/usample_6_dout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe19[9:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/usample_7_dout[9]"/>
+        <net name="design_1_i/usample_7_dout[8]"/>
+        <net name="design_1_i/usample_7_dout[7]"/>
+        <net name="design_1_i/usample_7_dout[6]"/>
+        <net name="design_1_i/usample_7_dout[5]"/>
+        <net name="design_1_i/usample_7_dout[4]"/>
+        <net name="design_1_i/usample_7_dout[3]"/>
+        <net name="design_1_i/usample_7_dout[2]"/>
+        <net name="design_1_i/usample_7_dout[1]"/>
+        <net name="design_1_i/usample_7_dout[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

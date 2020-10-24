@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_xlconstant_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_Controler_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_Controler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_encoder_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_srcClk_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_srcClk_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_datalimit_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_datalimit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_2_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ab2alphabeta_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_ab2alphabeta_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_fix_clk_i_w_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_fix_clk_i_w_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xlconstant_1_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_input_ctrl_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_input_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ADC_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_ADC_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_1_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ila_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_5_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_SwitchCOntroller_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_SwitchCOntroller_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_3_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_4_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_usample_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_xlconstant_0_0_synth_1"/>
+		<Parent Id="design_1_usample_0_0_synth_1"/>
+		<Parent Id="design_1_Controler_0_0_synth_1"/>
+		<Parent Id="design_1_encoder_0_0_synth_1"/>
+		<Parent Id="design_1_clk_wiz_0_0_synth_1"/>
+		<Parent Id="design_1_srcClk_0_0_synth_1"/>
+		<Parent Id="design_1_datalimit_0_0_synth_1"/>
+		<Parent Id="design_1_usample_2_0_synth_1"/>
+		<Parent Id="design_1_ab2alphabeta_0_0_synth_1"/>
+		<Parent Id="design_1_fix_clk_i_w_0_0_synth_1"/>
+		<Parent Id="design_1_xlconstant_1_0_synth_1"/>
+		<Parent Id="design_1_input_ctrl_0_0_synth_1"/>
+		<Parent Id="design_1_ADC_0_0_synth_1"/>
+		<Parent Id="design_1_usample_1_0_synth_1"/>
+		<Parent Id="design_1_ila_0_0_synth_1"/>
+		<Parent Id="design_1_usample_5_0_synth_1"/>
+		<Parent Id="design_1_SwitchCOntroller_0_0_synth_1"/>
+		<Parent Id="design_1_usample_3_0_synth_1"/>
+		<Parent Id="design_1_usample_4_0_synth_1"/>
+	</Run>
+</Runs>
+

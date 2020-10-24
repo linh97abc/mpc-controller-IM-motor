@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 23 14:18:29 2020
+# Process ID: 11016
+# Current directory: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11956 C:\Users\linh9\Desktop\dkdct3\dc11m\project_1\project_1.xpr
+# Log file: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/vivado.log
+# Journal file: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.xpr
+update_module_reference design_1_ADC_0_0
+update_module_reference design_1_ab2alphabeta_0_0
+update_module_reference design_1_Controler_0_0
+open_bd_design {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}

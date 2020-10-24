@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="17" Path="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="617859830cdf4523bd66fcf2e41c47b2"/>
+    <Option Name="Part" Val="xc7z020clg400-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="SimulatorLanguage" Val="VHDL"/>
+    <Option Name="BoardPart" Val="digilentinc.com:zybo-z7-20:part0:1.0"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/project_1.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/project_1.ip_user_files/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSABoardId" Val="zybo-z7-20"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="19"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../../encoder/encoder_v0.59.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../do_dong/ADC.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/fix_clk_i_w.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/input_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../do_dong/ab2alphabeta.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../datalimit.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/srcCLk.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/usample.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../switch/StateLevel11.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../switch/GateState.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../switch/SwitchController.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/protect_van.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_vecto_kg.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_iabk1.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_Ciab.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/vector_lien_ke.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/sincoslut.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/OpCostFunction.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_select_Vk1.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_sample.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc_predic_ik1.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/Mpc_PredicIk2.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/MHTT.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/fm_sample.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/d2ab.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/ab2dq.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../do_dong/loc_iabc.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/sampleIref.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/PI.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/mpc.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/FluxModule.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/dq2ab.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/Controller.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_encoder_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_encoder_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_encoder_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_encoder_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_encoder_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_datalimit_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_datalimit_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_ab2alphabeta_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_fix_clk_i_w_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_fix_clk_i_w_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_fix_clk_i_w_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_fix_clk_i_w_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_fix_clk_i_w_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_fix_clk_i_w_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_input_ctrl_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_input_ctrl_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_input_ctrl_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_input_ctrl_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_input_ctrl_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_input_ctrl_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_ADC_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_input_ctrl_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_fix_clk_i_w_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_srcClk_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_srcClk_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_1_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_srcClk_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_srcClk_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_srcClk_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_srcClk_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_srcClk_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_2_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_2_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_2_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_2_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_2_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_2_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_1_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_1_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_1_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_1_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_1_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_2_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_1_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_5_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_5_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_5_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_5_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_5_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_5_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_SwitchCOntroller_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_SwitchCOntroller_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_SwitchCOntroller_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_SwitchCOntroller_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_SwitchCOntroller_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_SwitchCOntroller_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_6_0/design_1_usample_6_0.xci">
+          <Proxy FileSetName="design_1_usample_6_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_7_0/design_1_usample_7_0.xci">
+          <Proxy FileSetName="design_1_usample_7_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hdl/design_1.hwdef"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hw_handoff/design_1.hwh"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_3_0/design_1_usample_3_0.xci">
+          <Proxy FileSetName="design_1_usample_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_Controler_0_0/design_1_Controler_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_datalimit_1_0/design_1_datalimit_1_0.xci">
+          <Proxy FileSetName="design_1_datalimit_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ila_1_0/design_1_ila_1_0.xci">
+          <Proxy FileSetName="design_1_ila_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_SwitchCOntroller_0_0/design_1_SwitchCOntroller_0_0.xci">
+          <Proxy FileSetName="design_1_SwitchCOntroller_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ila_0_0/design_1_ila_0_0.xci">
+          <Proxy FileSetName="design_1_ila_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_2_0/design_1_usample_2_0.xci">
+          <Proxy FileSetName="design_1_usample_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_protect_van_0_0/design_1_protect_van_0_0.xci">
+          <Proxy FileSetName="design_1_protect_van_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="hdl/design_1.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_0_0/design_1_usample_0_0.xci">
+          <Proxy FileSetName="design_1_usample_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_srcClk_0_0/design_1_srcClk_0_0.xci">
+          <Proxy FileSetName="design_1_srcClk_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_datalimit_0_0/design_1_datalimit_0_0.xci">
+          <Proxy FileSetName="design_1_datalimit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_1_0/design_1_usample_1_0.xci">
+          <Proxy FileSetName="design_1_usample_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_fix_clk_i_w_0_0/design_1_fix_clk_i_w_0_0.xci">
+          <Proxy FileSetName="design_1_fix_clk_i_w_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_encoder_0_0/design_1_encoder_0_0.xci">
+          <Proxy FileSetName="design_1_encoder_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ab2alphabeta_0_0/design_1_ab2alphabeta_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_input_ctrl_0_0/design_1_input_ctrl_0_0.xci">
+          <Proxy FileSetName="design_1_input_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ADC_0_0/design_1_ADC_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_4_0/design_1_usample_4_0.xci">
+          <Proxy FileSetName="design_1_usample_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_usample_5_0/design_1_usample_5_0.xci">
+          <Proxy FileSetName="design_1_usample_5_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_encoder_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_encoder_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_5_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_SwitchCOntroller_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_6_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_6_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_6_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_6_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_6_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_6_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_protect_van_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_protect_van_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_protect_van_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_protect_van_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_protect_van_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_protect_van_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_4_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_protect_van_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_4_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_4_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_4_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_4_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_4_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_4_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_7_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_6_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_7_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_7_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_7_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_7_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_7_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_7_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_1_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_1_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_1_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_datalimit_1_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_datalimit_1_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_1_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_3_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_datalimit_1_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_Controler_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_Controler_0_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_Controler_0_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_Controler_0_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_Controler_0_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_Controler_0_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_Controler_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="synth/design_1_usample_3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_3_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="sim/design_1_usample_3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_3_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_3_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="design_1_usample_3_0_stub.vhdl"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/loc_toc_do/loc_bac_1.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PHWDIR/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/new_ctrl_predic/wrapCtrl.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="design_1_wrapper"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../zybo_z7.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="loc_bac_1"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_encoder_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_encoder_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_encoder_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_srcClk_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_srcClk_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_srcClk_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_datalimit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_datalimit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_datalimit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_2_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_1_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_fix_clk_i_w_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_fix_clk_i_w_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_fix_clk_i_w_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_ila_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_ila_1_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_ila_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_datalimit_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_datalimit_1_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_datalimit_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_SwitchCOntroller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_SwitchCOntroller_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_SwitchCOntroller_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_protect_van_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_protect_van_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_protect_van_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_ila_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_4_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_3_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_input_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_input_ctrl_0_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_input_ctrl_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_7_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_7_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_6_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_6_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_6_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="design_1_usample_5_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_usample_5_0">
+      <Config>
+        <Option Name="TopModule" Val="design_1_usample_5_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_encoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_encoder_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_encoder_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_encoder_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_srcClk_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_srcClk_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_srcClk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_srcClk_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_datalimit_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_datalimit_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_datalimit_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_datalimit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_2_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_2_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_2_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_1_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_1_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_fix_clk_i_w_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_fix_clk_i_w_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_fix_clk_i_w_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_fix_clk_i_w_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_ila_1_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_ila_1_0" Part="xc7z020clg400-1" ConstrsSet="design_1_ila_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_ila_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_datalimit_1_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_datalimit_1_0" Part="xc7z020clg400-1" ConstrsSet="design_1_datalimit_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_datalimit_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_SwitchCOntroller_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_SwitchCOntroller_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_SwitchCOntroller_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_SwitchCOntroller_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_protect_van_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_protect_van_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_protect_van_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_protect_van_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_ila_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_ila_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_ila_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_4_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_4_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_4_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_4_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_3_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_3_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_3_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_3_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_input_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_input_ctrl_0_0" Part="xc7z020clg400-1" ConstrsSet="design_1_input_ctrl_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_input_ctrl_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_7_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_7_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_7_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_7_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_6_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_6_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_6_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_6_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_5_0_synth_1" Type="Ft3:Synth" SrcSet="design_1_usample_5_0" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_5_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design_1_usample_5_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_0_0" Description="Default settings for Implementation." SynthRun="design_1_usample_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_encoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_encoder_0_0" Description="Default settings for Implementation." SynthRun="design_1_encoder_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_srcClk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_srcClk_0_0" Description="Default settings for Implementation." SynthRun="design_1_srcClk_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_datalimit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_datalimit_0_0" Description="Default settings for Implementation." SynthRun="design_1_datalimit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_2_0" Description="Default settings for Implementation." SynthRun="design_1_usample_2_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_1_0" Description="Default settings for Implementation." SynthRun="design_1_usample_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_fix_clk_i_w_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_fix_clk_i_w_0_0" Description="Default settings for Implementation." SynthRun="design_1_fix_clk_i_w_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_ila_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_ila_1_0" Description="Default settings for Implementation." SynthRun="design_1_ila_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_datalimit_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_datalimit_1_0" Description="Default settings for Implementation." SynthRun="design_1_datalimit_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_SwitchCOntroller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_SwitchCOntroller_0_0" Description="Default settings for Implementation." SynthRun="design_1_SwitchCOntroller_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_protect_van_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_protect_van_0_0" Description="Default settings for Implementation." SynthRun="design_1_protect_van_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_ila_0_0" Description="Default settings for Implementation." SynthRun="design_1_ila_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_4_0" Description="Default settings for Implementation." SynthRun="design_1_usample_4_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_3_0" Description="Default settings for Implementation." SynthRun="design_1_usample_3_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_input_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_input_ctrl_0_0" Description="Default settings for Implementation." SynthRun="design_1_input_ctrl_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_7_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_7_0" Description="Default settings for Implementation." SynthRun="design_1_usample_7_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_6_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_6_0" Description="Default settings for Implementation." SynthRun="design_1_usample_6_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="design_1_usample_5_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="design_1_usample_5_0" Description="Default settings for Implementation." SynthRun="design_1_usample_5_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+</Project>

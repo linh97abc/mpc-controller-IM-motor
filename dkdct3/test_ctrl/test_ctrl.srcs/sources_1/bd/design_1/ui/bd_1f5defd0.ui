@@ -1,0 +1,37 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clk_1 -pg 1 -y 80 -defaultsOSRD
+preplace port rst -pg 1 -y 20 -defaultsOSRD
+preplace port clk -pg 1 -y 390 -defaultsOSRD
+preplace portBus inBeta -pg 1 -y 430 -defaultsOSRD
+preplace portBus inW -pg 1 -y 450 -defaultsOSRD
+preplace portBus inAlpha -pg 1 -y 410 -defaultsOSRD
+preplace portBus Vdc -pg 1 -y 590 -defaultsOSRD
+preplace inst sampleIref_0 -pg 1 -lvl 2 -y 140 -defaultsOSRD
+preplace inst PI_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst PI_1 -pg 1 -lvl 1 -y 260 -defaultsOSRD
+preplace inst MPC_0 -pg 1 -lvl 2 -y 520 -defaultsOSRD
+preplace inst dq2ab_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
+preplace inst FluxModule_0 -pg 1 -lvl 1 -y 410 -defaultsOSRD
+preplace netloc dq2ab_0_beta 1 1 2 390 220 680
+preplace netloc clk_1_1 1 0 2 30 10 370J
+preplace netloc PI_1_u 1 1 1 340
+preplace netloc rst_1 1 0 2 0 520 350
+preplace netloc PI_0_u 1 1 1 360
+preplace netloc FluxModule_0_PhiRd_k 1 0 2 40 170 330
+preplace netloc sampleIref_0_IbRef 1 1 2 390 230 670
+preplace netloc clk_1 1 0 2 40 500 360J
+preplace netloc Vdc_1 1 0 2 NJ 590 NJ
+preplace netloc inAlpha_1 1 0 2 20 510 NJ
+preplace netloc dq2ab_0_alpha 1 1 2 390 50 690
+preplace netloc FluxModule_0_PhiBeta_k1 1 1 1 330
+preplace netloc FluxModule_0_PhiAlpha_k1 1 1 1 340
+preplace netloc inBeta_1 1 0 2 10 530 NJ
+preplace netloc inW_1 1 0 2 30 610 NJ
+preplace netloc sampleIref_0_IaRef 1 1 2 380 60 670
+preplace netloc FluxModule_0_Cost_k 1 1 1 370
+preplace netloc FluxModule_0_Sint_k 1 1 1 340
+levelinfo -pg 1 -20 190 540 720 -top 0 -bot 660
+",
+}

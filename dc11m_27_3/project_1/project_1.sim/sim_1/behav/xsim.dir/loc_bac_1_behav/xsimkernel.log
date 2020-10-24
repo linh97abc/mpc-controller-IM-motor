@@ -1,0 +1,7 @@
+Running: xsim.dir/loc_bac_1_behav/xsimk.exe -simmode gui -wdb loc_bac_1_behav.wdb -simrunnum 0 -socket 55625
+Design successfully loaded
+Design Loading Memory Usage: 8840 KB (Peak: 8840 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 9580 KB (Peak: 9580 KB)
+Simulation CPU Usage: 62 ms

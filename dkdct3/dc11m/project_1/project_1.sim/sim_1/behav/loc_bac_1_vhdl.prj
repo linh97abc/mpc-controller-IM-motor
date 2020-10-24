@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../loc_toc_do/loc_bac_1.vhd"
+
+# Do not sort compile order
+nosort

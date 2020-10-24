@@ -1,0 +1,25 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../MPC/mpc_vecto_kg.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc_iabk1.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc_Ciab.vhd"
+vhdl xil_defaultlib  "../../../../MPC/vector_lien_ke.vhd"
+vhdl xil_defaultlib  "../../../../MPC/OpCostFunction.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc_select_Vk1.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc_sample.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc_predic_ik1.vhd"
+vhdl xil_defaultlib  "../../../../MPC/Mpc_PredicIk2.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/sincoslut.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/MHTT.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/fm_sample.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/d2ab.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/ab2dq.vhd"
+vhdl xil_defaultlib  "../../../../srcCLk.vhd"
+vhdl xil_defaultlib  "../../../test_ctrl.srcs/sources_1/new/sampleIref.vhd"
+vhdl xil_defaultlib  "../../../../PI.vhd"
+vhdl xil_defaultlib  "../../../../MPC/mpc.vhd"
+vhdl xil_defaultlib  "../../../../dq2ab.vhd"
+vhdl xil_defaultlib  "../../../../MHTT/FluxModule.vhd"
+vhdl xil_defaultlib  "../../../../Controller.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,17 @@
+$date
+        2020-Jun-13 15:19:12
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 20 " design_1_i/input_ctrl_0_Vdc [19:0] $end
+$var reg 20 6 design_1_i/input_ctrl_0_Wref [19:0] $end
+$var reg 1 J _TRIGGER $end
+$var reg 1 K _WINDOW $end
+$var reg 1 L _GAP $end
+$upscope $end
+$enddefinitions $end

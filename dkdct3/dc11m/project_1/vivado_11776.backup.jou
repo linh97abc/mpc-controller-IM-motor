@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 19 16:42:22 2020
+# Process ID: 11776
+# Current directory: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10904 C:\Users\linh9\Desktop\src_dk_lockalman\dc11m\project_1\project_1.xpr
+# Log file: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/vivado.log
+# Journal file: C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/project_1.xpr
+open_bd_design {C:/Users/linh9/Desktop/src_dk_lockalman/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_Controler_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

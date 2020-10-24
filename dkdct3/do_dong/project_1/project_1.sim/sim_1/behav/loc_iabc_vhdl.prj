@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../loc_iabc.vhd"
+
+# Do not sort compile order
+nosort

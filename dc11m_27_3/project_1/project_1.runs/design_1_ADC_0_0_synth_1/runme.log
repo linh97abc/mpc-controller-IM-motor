@@ -1,0 +1,376 @@
+
+*** Running vivado
+    with args -log design_1_ADC_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ADC_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_ADC_0_0.tcl -notrace
+Command: synth_design -top design_1_ADC_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 256 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 328.141 ; gain = 118.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ADC_0_0' [c:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ADC_0_0/synth/design_1_ADC_0_0.vhd:73]
+	Parameter CLK_DIV bound to: 10 - type: integer 
+	Parameter CONTROL1 bound to: 16'b1000010000110000 
+	Parameter CONTROL2 bound to: 16'b1001110000110000 
+	Parameter RANGE1 bound to: 16'b1011010101000000 
+	Parameter RANGE2 bound to: 16'b1101010100100000 
+	Parameter SEQUENCE bound to: 16'b1111111111100000 
+INFO: [Synth 8-3491] module 'ADC' declared at 'C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:34' bound to instance 'U0' of component 'ADC' [c:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ADC_0_0/synth/design_1_ADC_0_0.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ADC' [C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:66]
+	Parameter CLK_DIV bound to: 10 - type: integer 
+	Parameter CONTROL1 bound to: 16'b1000010000110000 
+	Parameter CONTROL2 bound to: 16'b1001110000110000 
+	Parameter RANGE1 bound to: 16'b1011010101000000 
+	Parameter RANGE2 bound to: 16'b1101010100100000 
+	Parameter SEQUENCE bound to: 16'b1111111111100000 
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ADC_0_0' (2#1) [c:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ADC_0_0/synth/design_1_ADC_0_0.vhd:73]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 366.332 ; gain = 156.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 366.332 ; gain = 156.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 680.168 ; gain = 0.047
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 680.168 ; gain = 470.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 680.168 ; gain = 470.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 680.168 ; gain = 470.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "r_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "r_cs" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_sclk_rise" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_data_adc1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_data_adc2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_data_adc1_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 680.168 ; gain = 470.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	  19 Input     16 Bit        Muxes := 1     
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	   3 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ADC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	  19 Input     16 Bit        Muxes := 1     
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	   3 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP U0/s_data_adc1_20, operation Mode is: A*(B:0x28).
+DSP Report: operator U0/s_data_adc1_20 is absorbed into DSP U0/s_data_adc1_20.
+DSP Report: Generating DSP U0/s_data_adc2_20, operation Mode is: A*(B:0x28).
+DSP Report: operator U0/s_data_adc2_20 is absorbed into DSP U0/s_data_adc2_20.
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[0]' (FDCE) to 'U0/dataout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[15]' (FDCE) to 'U0/dataout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[1]' (FDCE) to 'U0/dataout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[9]' (FDCE) to 'U0/dataout_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[5]' (FDCE) to 'U0/dataout_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[13]' (FDCE) to 'U0/dataout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/dataout_reg[3]' (FDCE) to 'U0/dataout_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/dataout_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/r_data_adc2_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/r_data_adc1_1_reg[13] )
+INFO: [Synth 8-3332] Sequential element (U0/dataout_reg[2]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/datain_reg[15]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/datain_reg[14]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/datain_reg[13]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/r_data_adc1_1_reg[13]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_data_adc1_2_reg[21]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_data_adc1_2_reg[20]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/r_data_adc2_reg[13]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_data_adc2_2_reg[21]) is unused and will be removed from module design_1_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_data_adc2_2_reg[20]) is unused and will be removed from module design_1_ADC_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 680.168 ; gain = 470.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ADC         | A*(B:0x28)  | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ADC         | A*(B:0x28)  | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 686.086 ; gain = 476.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 686.086 ; gain = 476.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:394]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:395]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/linh9/Desktop/dkdct3/do_dong/ADC.vhd:353]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     5|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |    16|
+|4     |LUT2    |    50|
+|5     |LUT3    |     8|
+|6     |LUT4    |    10|
+|7     |LUT5    |    15|
+|8     |LUT6    |    30|
+|9     |FDCE    |    68|
+|10    |FDPE    |     5|
+|11    |FDRE    |    13|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   222|
+|2     |  U0     |ADC    |   220|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 705.453 ; gain = 143.621
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 705.453 ; gain = 495.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 705.453 ; gain = 459.469
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/design_1_ADC_0_0_synth_1/design_1_ADC_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/design_1_ADC_0_0_synth_1/design_1_ADC_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 705.453 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 10:46:48 2020...

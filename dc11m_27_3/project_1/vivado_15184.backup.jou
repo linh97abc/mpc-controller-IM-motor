@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 23 14:33:06 2020
+# Process ID: 15184
+# Current directory: C:/Users/linh9/Desktop/dc11m_27_3/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8208 C:\Users\linh9\Desktop\dc11m_27_3\project_1\project_1.xpr
+# Log file: C:/Users/linh9/Desktop/dc11m_27_3/project_1/vivado.log
+# Journal file: C:/Users/linh9/Desktop/dc11m_27_3/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.xpr
+open_bd_design {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {1640}] [get_bd_cells xlconstant_0]
+endgroup
+save_bd_design
+update_module_reference design_1_input_ctrl_0_0
+startgroup
+set_property -dict [list CONFIG.C_PROBE20_TYPE {2} CONFIG.C_NUM_OF_PROBES {21}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins ila_0/probe20] [get_bd_pins input_ctrl_0/rst_w]
+save_bd_design
+reset_run design_1_ila_0_0_synth_1
+reset_run design_1_xlconstant_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+set_property CAPTURE_COMPARE_VALUE eq1'b0 [get_hw_probes design_1_i/fix_clk_i_w_0_sample_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+open_bd_design {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_i/usample_3_dout} {design_1_i/usample_4_dout} }
+disconnect_hw_server localhost:3121
+connect_hw_server
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+set_property CAPTURE_COMPARE_VALUE eq1'b0 [get_hw_probes design_1_i/input_ctrl_0_rst_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+set_property CAPTURE_COMPARE_VALUE eq1'bX [get_hw_probes design_1_i/fix_clk_i_w_0_sample_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+set_property CAPTURE_COMPARE_VALUE eq1'bX [get_hw_probes design_1_i/input_ctrl_0_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+open_bd_design {C:/Users/linh9/Desktop/dc11m_27_3/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}

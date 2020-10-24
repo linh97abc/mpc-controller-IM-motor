@@ -1,0 +1,36 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Controler_behav xil_defaultlib.Controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.srcClk [srcclk_default]
+Compiling architecture arch of entity xil_defaultlib.PI [\PI(kp=1245184,kit=1677721,limit...]
+Compiling architecture arch of entity xil_defaultlib.PI [\PI(kp=175,kit=3204,limitup=5242...]
+Compiling architecture arch of entity xil_defaultlib.dq2ab [\dq2ab(dwidth=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.sampleIref [sampleiref_default]
+Compiling architecture arch of entity xil_defaultlib.fm_sample [\fm_sample(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.ab2dq [\ab2dq(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.MHTT [\MHTT(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.sincoslut [sincoslut_default]
+Compiling architecture arch of entity xil_defaultlib.d2ab [\d2ab(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.FluxModule [fluxmodule_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_sample [\mpc_sample(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.mpc_Ciab [mpc_ciab_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_vecto_kg [\mpc_vecto_kg(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.mpc_iabk1 [mpc_iabk1_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_predic_ik1 [mpc_predic_ik1_default]
+Compiling architecture arch of entity xil_defaultlib.vector_lien_ke [vector_lien_ke_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_select_Vk1 [\mpc_select_Vk1(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.Mpc_PredicIk2 [mpc_predicik2_default]
+Compiling architecture arch of entity xil_defaultlib.OpCostFunction [\OpCostFunction(dwidth=52)\]
+Compiling architecture arch of entity xil_defaultlib.MPC [mpc_default]
+Compiling architecture arch of entity xil_defaultlib.controler
+Built simulation snapshot Controler_behav

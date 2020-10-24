@@ -1,0 +1,96 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port err_n -pg 1 -y 180 -defaultsOSRD
+preplace port i_miso -pg 1 -y 400 -defaultsOSRD
+preplace port clk1 -pg 1 -y 300 -defaultsOSRD
+preplace port o_cs -pg 1 -y 200 -defaultsOSRD
+preplace port o_sclk -pg 1 -y 220 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 770 -defaultsOSRD
+preplace port a -pg 1 -y 660 -defaultsOSRD
+preplace port o_mosi -pg 1 -y 320 -defaultsOSRD
+preplace port b -pg 1 -y 680 -defaultsOSRD
+preplace portBus sw -pg 1 -y 820 -defaultsOSRD
+preplace portBus btn -pg 1 -y 840 -defaultsOSRD
+preplace portBus PA -pg 1 -y 70 -defaultsOSRD
+preplace portBus PB -pg 1 -y 90 -defaultsOSRD
+preplace portBus PC -pg 1 -y 110 -defaultsOSRD
+preplace inst datalimit_0 -pg 1 -lvl 5 -y 830 -defaultsOSRD
+preplace inst datalimit_1 -pg 1 -lvl 5 -y 710 -defaultsOSRD
+preplace inst Controler_0 -pg 1 -lvl 6 -y 670 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -y 750 -defaultsOSRD
+preplace inst protect_van_0 -pg 1 -lvl 9 -y 90 -defaultsOSRD
+preplace inst srcClk_0 -pg 1 -lvl 8 -y 270 -defaultsOSRD
+preplace inst usample_0 -pg 1 -lvl 8 -y 720 -defaultsOSRD
+preplace inst fix_clk_i_w_0 -pg 1 -lvl 4 -y 640 -defaultsOSRD
+preplace inst usample_1 -pg 1 -lvl 8 -y 590 -defaultsOSRD
+preplace inst encoder_0 -pg 1 -lvl 3 -y 650 -defaultsOSRD
+preplace inst ab2alphabeta_0 -pg 1 -lvl 3 -y 480 -defaultsOSRD
+preplace inst SwitchCOntroller_0 -pg 1 -lvl 8 -y 130 -defaultsOSRD
+preplace inst usample_2 -pg 1 -lvl 8 -y 410 -defaultsOSRD
+preplace inst ADC_0 -pg 1 -lvl 2 -y 390 -defaultsOSRD
+preplace inst usample_3 -pg 1 -lvl 8 -y 910 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 9 -y 910 -defaultsOSRD
+preplace inst usample_4 -pg 1 -lvl 8 -y 1030 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 7 -y 890 -defaultsOSRD
+preplace inst usample_5 -pg 1 -lvl 9 -y 370 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 770 -defaultsOSRD
+preplace inst input_ctrl_0 -pg 1 -lvl 2 -y 820 -defaultsOSRD
+preplace inst usample_6 -pg 1 -lvl 9 -y 470 -defaultsOSRD
+preplace inst usample_7 -pg 1 -lvl 9 -y 590 -defaultsOSRD
+preplace netloc usample_6_dout 1 8 2 2440 530 2730
+preplace netloc Controler_0_Pd_out 1 6 3 NJ 700 2020J 660 2280
+preplace netloc btn_1 1 0 2 NJ 840 NJ
+preplace netloc SwitchCOntroller_0_GateB 1 8 1 2410
+preplace netloc usample_3_dout 1 8 1 2260
+preplace netloc protect_van_0_PA 1 9 1 NJ
+preplace netloc SwitchCOntroller_0_GateC 1 8 1 2420
+preplace netloc usample_7_dout 1 8 2 2450 650 2730
+preplace netloc protect_van_0_PB 1 9 1 NJ
+preplace netloc b_1 1 0 3 NJ 680 NJ 680 NJ
+preplace netloc fix_clk_i_w_0_sample_i 1 4 5 1090 400 1450 400 NJ 400 2000 470 2390
+preplace netloc protect_van_0_PC 1 9 1 NJ
+preplace netloc input_ctrl_0_Vdc 1 2 5 NJ 830 810J 840 1060J 610 1410 890 NJ
+preplace netloc srcClk_0_clk1 1 8 2 NJ 280 2750J
+preplace netloc input_ctrl_0_rst_w 1 2 7 530J 1120 NJ 1120 1110 1120 1420J 1120 NJ 1120 NJ 1120 N
+preplace netloc i_miso_1 1 0 2 NJ 400 NJ
+preplace netloc usample_5_dout 1 8 2 2430 310 2730
+preplace netloc Controler_0_Ia_pre 1 6 2 NJ 720 1990
+preplace netloc fix_clk_i_w_0_sample_w 1 4 5 1100 630 1400J 850 1760J 710 2030J 780 2340J
+preplace netloc ADC_0_o_sclk 1 2 8 490J 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 2750J
+preplace netloc sys_clock_1 1 0 1 NJ
+preplace netloc usample_4_dout 1 8 1 2340
+preplace netloc Controler_0_IdRef_out 1 6 2 NJ 660 2010
+preplace netloc usample_0_dout 1 8 1 2270
+preplace netloc Controler_0_IbRef_out 1 6 3 1740J 820 NJ 820 NJ
+preplace netloc xlconstant_0_dout 1 4 1 1080J
+preplace netloc ADC_0_done 1 2 1 540
+preplace netloc Controler_0_k 1 6 2 NJ 600 1990
+preplace netloc ab2alphabeta_0_beta 1 3 6 NJ 500 NJ 500 1430J 500 NJ 500 NJ 500 2330J
+preplace netloc ab2alphabeta_0_alpha 1 3 6 NJ 480 NJ 480 1440J 480 NJ 480 NJ 480 2350
+preplace netloc ADC_0_data_adc_A 1 2 7 550 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 2320
+preplace netloc ADC_0_o_mosi 1 2 8 NJ 360 NJ 360 NJ 360 NJ 360 NJ 360 2000J 350 2370J 300 2740J
+preplace netloc Controler_0_IaRef_out 1 6 3 1780J 800 NJ 800 N
+preplace netloc datalimit_1_data_out 1 5 1 1380
+preplace netloc srcClk_0_sample10k 1 1 8 200 260 NJ 260 850 260 NJ 260 NJ 260 NJ 260 2010J 510 2300
+preplace netloc input_ctrl_0_Wref 1 2 5 500J 910 NJ 910 1120 910 NJ 910 NJ
+preplace netloc ADC_0_data_adc_B 1 2 7 510 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 2310J
+preplace netloc clk_wiz_0_clk_out1 1 1 8 180 520 500 280 840 280 NJ 280 NJ 280 1750 280 2020 650 2360J
+preplace netloc Controler_0_Ib_pre 1 6 2 NJ 740 1980
+preplace netloc usample_1_dout 1 8 1 2300
+preplace netloc encoder_0_done 1 3 1 830
+preplace netloc encoder_0_speed 1 3 6 820J 830 1070J 640 1390 840 1770J 790 NJ 790 2290J
+preplace netloc Controler_0_IqRef_out 1 6 2 NJ 680 2010
+preplace netloc sw_1 1 0 2 NJ 820 NJ
+preplace netloc usample_2_dout 1 8 1 2370
+preplace netloc datalimit_0_data_out 1 5 4 1460 970 NJ 970 NJ 970 2400J
+preplace netloc ADC_0_o_cs 1 2 8 530J 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc a_1 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc SwitchCOntroller_0_GateA 1 8 1 2400
+preplace netloc input_ctrl_0_rst 1 1 9 190 60 520 60 860 60 1080 60 1460 60 NJ 60 2020 60 2380 190 2750J
+levelinfo -pg 1 -30 100 360 690 960 1250 1610 1890 2150 2630 2990 -top 0 -bot 1170
+",
+}
+{
+   da_board_cnt: "1",
+}

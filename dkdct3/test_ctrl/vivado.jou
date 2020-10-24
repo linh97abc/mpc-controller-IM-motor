@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jan 09 18:44:07 2020
+# Process ID: 13260
+# Current directory: C:/Users/linh9/Desktop/src/test_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10660 C:\Users\linh9\Desktop\src\test_ctrl\test_ctrl.xpr
+# Log file: C:/Users/linh9/Desktop/src/test_ctrl/vivado.log
+# Journal file: C:/Users/linh9/Desktop/src/test_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.xpr
+open_bd_design {C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/bd/design_1/design_1.bd}

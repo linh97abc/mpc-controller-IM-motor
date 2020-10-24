@@ -1,0 +1,1207 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 08 17:56:28 2020
+# Process ID: 5208
+# Current directory: C:/Users/linh9/Desktop/src/test_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12620 C:\Users\linh9\Desktop\src\test_ctrl\test_ctrl.xpr
+# Log file: C:/Users/linh9/Desktop/src/test_ctrl/vivado.log
+# Journal file: C:/Users/linh9/Desktop/src/test_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 796.082 ; gain = 156.555
+set_property top PI [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch arch [get_filesets sim_1]
+set_property top_file C:/Users/linh9/Desktop/src/PI.vhd [get_filesets sim_1]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'PI' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PI_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PI
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot PI_behav xil_defaultlib.PI -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.pi
+Built simulation snapshot PI_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/xsim.dir/PI_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 08 17:57:28 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 808.863 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PI_behav -key {Behavioral:sim_1:Functional:PI} -tclbatch {PI.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source PI.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PI_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 808.863 ; gain = 0.000
+add_force {/PI/rst} -radix hex {0 0ns}
+add_force {/PI/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/PI/ref} -radix hex {1000 0ns}
+add_force {/PI/y} -radix hex {0 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 ms
+add_force {/PI/ref} -radix dec {-3000 0ns}
+run 1 ms
+run 1 ms
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top FluxModule [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch arch [get_filesets sim_1]
+set_property top_file C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd [get_filesets sim_1]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'FluxModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj FluxModule_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sincoslut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MHTT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fm_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ab2dq
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FluxModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot FluxModule_behav xil_defaultlib.FluxModule -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.fm_sample [\fm_sample(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.ab2dq [\ab2dq(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.MHTT [\MHTT(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.sincoslut [sincoslut_default]
+Compiling architecture arch of entity xil_defaultlib.d2ab [\d2ab(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.fluxmodule
+Built simulation snapshot FluxModule_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/xsim.dir/FluxModule_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 08 18:00:29 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FluxModule_behav -key {Behavioral:sim_1:Functional:FluxModule} -tclbatch {FluxModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source FluxModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FluxModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 823.164 ; gain = 0.000
+add_force {/FluxModule/rst} -radix hex {0 0ns}
+add_force {/FluxModule/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/FluxModule/inAlpha} -radix hex {1000 0ns}
+add_force {/FluxModule/inBeta} -radix hex {600 0ns}
+add_force {/FluxModule/inW} -radix hex {600 0ns}
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/PI.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/PI.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/dq2ab.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/dq2ab.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "PI", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+INFO: [filemgmt 20-737] The module currently selected as top, "PI", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Wed Jan 08 18:01:27 2020] Launched synth_1...
+Run output will be captured here: C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: Controler
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:02 ; elapsed = 00:07:09 . Memory (MB): peak = 908.598 ; gain = 698.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Controler' [C:/Users/linh9/Desktop/src/Controller.vhd:28]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'srcClk' declared at 'C:/Users/linh9/Desktop/src/srcCLk.vhd:5' bound to instance 'uut_clk' of component 'srcClk' [C:/Users/linh9/Desktop/src/Controller.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'srcClk' [C:/Users/linh9/Desktop/src/srcCLk.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'srcClk' (1#1) [C:/Users/linh9/Desktop/src/srcCLk.vhd:13]
+	Parameter kp bound to: 1245184 - type: integer 
+	Parameter kiT bound to: 1677721 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'PI' declared at 'C:/Users/linh9/Desktop/src/PI.vhd:8' bound to instance 'uut_piphi' of component 'PI' [C:/Users/linh9/Desktop/src/Controller.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'PI' [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 1245184 - type: integer 
+	Parameter kiT bound to: 1677721 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PI' (2#1) [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 175 - type: integer 
+	Parameter kiT bound to: 3204 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'PI' declared at 'C:/Users/linh9/Desktop/src/PI.vhd:8' bound to instance 'uut_piw' of component 'PI' [C:/Users/linh9/Desktop/src/Controller.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'PI__parameterized1' [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 175 - type: integer 
+	Parameter kiT bound to: 3204 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PI__parameterized1' (2#1) [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'dq2ab' declared at 'C:/Users/linh9/Desktop/src/dq2ab.vhd:5' bound to instance 'idq2abref' of component 'dq2ab' [C:/Users/linh9/Desktop/src/Controller.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'dq2ab' [C:/Users/linh9/Desktop/src/dq2ab.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dq2ab' (3#1) [C:/Users/linh9/Desktop/src/dq2ab.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'sampleIref' declared at 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:34' bound to instance 'sample_iabref' of component 'sampleIref' [C:/Users/linh9/Desktop/src/Controller.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'sampleIref' [C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:44]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sampleIref' (4#1) [C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:44]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-3491] module 'FluxModule' declared at 'C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:5' bound to instance 'uut_mhtt' of component 'FluxModule' [C:/Users/linh9/Desktop/src/Controller.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'FluxModule' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:30]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'fm_sample' declared at 'C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:5' bound to instance 'sample_uut' of component 'fm_sample' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'fm_sample' [C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:25]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fm_sample' (5#1) [C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:25]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'ab2dq' declared at 'C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:7' bound to instance 'iabk_2_idqk' of component 'ab2dq' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'ab2dq' [C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ab2dq' (6#1) [C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-3491] module 'MHTT' declared at 'C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:7' bound to instance 'predic_prd_theta' of component 'MHTT' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'MHTT' [C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:29]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MHTT' (7#1) [C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:29]
+INFO: [Synth 8-3491] module 'sincoslut' declared at 'C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:5' bound to instance 'sincos_k1' of component 'sincoslut' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'sincoslut' [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:2089]
+INFO: [Synth 8-226] default block is never used [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:2107]
+INFO: [Synth 8-256] done synthesizing module 'sincoslut' (8#1) [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:16]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'd2ab' declared at 'C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:7' bound to instance 'phiD2ab_k1' of component 'd2ab' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'd2ab' [C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:21]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd2ab' (9#1) [C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'FluxModule' (10#1) [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:30]
+	Parameter A11 bound to: 32'b00000000111111000011101000001111 
+	Parameter A12 bound to: 32'b00000000000000011101001001101100 
+	Parameter A13 bound to: 32'b00000000000010100001011010011110 
+	Parameter A14 bound to: 32'b00000000000100000100001010011011 
+	Parameter A21 bound to: 32'b00000000111111000011101000001111 
+	Parameter A23 bound to: 32'b00000000000000011101001001101100 
+	Parameter A22 bound to: 32'b11111111111101011110100101100010 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'MPC' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc.vhd:5' bound to instance 'current_ctrl' of component 'MPC' [C:/Users/linh9/Desktop/src/Controller.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'MPC' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:40]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_sample' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:5' bound to instance 'uut_sample' of component 'mpc_sample' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'mpc_sample' [C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:33]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_sample' (11#1) [C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:33]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_predic_ik1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:5' bound to instance 'uut_predic_ik1' of component 'mpc_predic_ik1' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'mpc_predic_ik1' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:35]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_Ciab' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:5' bound to instance 'uut_ciab1' of component 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:42]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_Ciab' (12#1) [C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:42]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut_vectorVk' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:15]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_vecto_kg' (13#1) [C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:15]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut_ik1' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:36]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_iabk1' (14#1) [C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'mpc_predic_ik1' (15#1) [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:35]
+INFO: [Synth 8-3491] module 'vector_lien_ke' declared at 'C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:5' bound to instance 'uut_vector_lienke' of component 'vector_lien_ke' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'vector_lien_ke' [C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'vector_lien_ke' (16#1) [C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:18]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_select_Vk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:5' bound to instance 'uut_selectVk' of component 'mpc_select_Vk1' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'mpc_select_Vk1' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:41]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut1' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:52]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut2' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:61]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut3' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:70]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut4' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:79]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut5' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:88]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut6' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:97]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut7' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'mpc_select_Vk1' (17#1) [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:41]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Mpc_PredicIk2' declared at 'C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:5' bound to instance 'uut_predic_ik2' of component 'Mpc_PredicIk2' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'Mpc_PredicIk2' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:73]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_Ciab' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:5' bound to instance 'uut_Cia' of component 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:116]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut1' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:139]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut2' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:155]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut3' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:171]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut4' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:187]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut5' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:203]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut6' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:219]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut7' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'Mpc_PredicIk2' (18#1) [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:73]
+	Parameter dWidth bound to: 52 - type: integer 
+INFO: [Synth 8-3491] module 'OpCostFunction' declared at 'C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:5' bound to instance 'uut_optg' of component 'OpCostFunction' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'OpCostFunction' [C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:38]
+	Parameter dWidth bound to: 52 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OpCostFunction' (19#1) [C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MPC' (20#1) [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Controler' (21#1) [C:/Users/linh9/Desktop/src/Controller.vhd:28]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[15]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[14]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[13]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[12]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[11]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[10]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[9]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[15]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[14]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[13]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[12]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[11]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[10]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:04 ; elapsed = 00:07:12 . Memory (MB): peak = 944.520 ; gain = 734.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:04 ; elapsed = 00:07:12 . Memory (MB): peak = 944.520 ; gain = 734.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:21 ; elapsed = 00:07:25 . Memory (MB): peak = 1245.547 ; gain = 1035.313
+86 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1245.547 ; gain = 383.172
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/src/Controller.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/src/Controller.vhd:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "PI", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+INFO: [filemgmt 20-737] The module currently selected as top, "PI", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Wed Jan 08 18:06:13 2020] Launched synth_1...
+Run output will be captured here: C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: Controler
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:54 ; elapsed = 00:11:55 . Memory (MB): peak = 1245.547 ; gain = 1035.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Controler' [C:/Users/linh9/Desktop/src/Controller.vhd:28]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'srcClk' declared at 'C:/Users/linh9/Desktop/src/srcCLk.vhd:5' bound to instance 'uut_clk' of component 'srcClk' [C:/Users/linh9/Desktop/src/Controller.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'srcClk' [C:/Users/linh9/Desktop/src/srcCLk.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'srcClk' (1#1) [C:/Users/linh9/Desktop/src/srcCLk.vhd:13]
+	Parameter kp bound to: 1245184 - type: integer 
+	Parameter kiT bound to: 1677721 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'PI' declared at 'C:/Users/linh9/Desktop/src/PI.vhd:8' bound to instance 'uut_piphi' of component 'PI' [C:/Users/linh9/Desktop/src/Controller.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'PI' [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 1245184 - type: integer 
+	Parameter kiT bound to: 1677721 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PI' (2#1) [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 175 - type: integer 
+	Parameter kiT bound to: 3204 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'PI' declared at 'C:/Users/linh9/Desktop/src/PI.vhd:8' bound to instance 'uut_piw' of component 'PI' [C:/Users/linh9/Desktop/src/Controller.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'PI__parameterized1' [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter kp bound to: 175 - type: integer 
+	Parameter kiT bound to: 3204 - type: integer 
+	Parameter limitUp bound to: 52428 - type: integer 
+	Parameter limitLow bound to: -52428 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter uInit bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PI__parameterized1' (2#1) [C:/Users/linh9/Desktop/src/PI.vhd:31]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'dq2ab' declared at 'C:/Users/linh9/Desktop/src/dq2ab.vhd:5' bound to instance 'idq2abref' of component 'dq2ab' [C:/Users/linh9/Desktop/src/Controller.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'dq2ab' [C:/Users/linh9/Desktop/src/dq2ab.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dq2ab' (3#1) [C:/Users/linh9/Desktop/src/dq2ab.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'sampleIref' declared at 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:34' bound to instance 'sample_iabref' of component 'sampleIref' [C:/Users/linh9/Desktop/src/Controller.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'sampleIref' [C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:44]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sampleIref' (4#1) [C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd:44]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-3491] module 'FluxModule' declared at 'C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:5' bound to instance 'uut_mhtt' of component 'FluxModule' [C:/Users/linh9/Desktop/src/Controller.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'FluxModule' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:30]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'fm_sample' declared at 'C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:5' bound to instance 'sample_uut' of component 'fm_sample' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'fm_sample' [C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:25]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fm_sample' (5#1) [C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd:25]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'ab2dq' declared at 'C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:7' bound to instance 'iabk_2_idqk' of component 'ab2dq' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'ab2dq' [C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ab2dq' (6#1) [C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd:20]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-3491] module 'MHTT' declared at 'C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:7' bound to instance 'predic_prd_theta' of component 'MHTT' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'MHTT' [C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:29]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter T_us bound to: 100 - type: integer 
+	Parameter Tr_us bound to: 189000 - type: integer 
+	Parameter Wrange_u bound to: 28762 - type: integer 
+	Parameter ThetaRange_n bound to: 766990 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MHTT' (7#1) [C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd:29]
+INFO: [Synth 8-3491] module 'sincoslut' declared at 'C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:5' bound to instance 'sincos_k1' of component 'sincoslut' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'sincoslut' [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:2089]
+INFO: [Synth 8-226] default block is never used [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:2107]
+INFO: [Synth 8-256] done synthesizing module 'sincoslut' (8#1) [C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd:16]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'd2ab' declared at 'C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:7' bound to instance 'phiD2ab_k1' of component 'd2ab' [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'd2ab' [C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:21]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd2ab' (9#1) [C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'FluxModule' (10#1) [C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd:30]
+	Parameter A11 bound to: 32'b00000000111111000011101000001111 
+	Parameter A12 bound to: 32'b00000000000000011101001001101100 
+	Parameter A13 bound to: 32'b00000000000010100001011010011110 
+	Parameter A14 bound to: 32'b00000000000100000100001010011011 
+	Parameter A21 bound to: 32'b00000000111111000011101000001111 
+	Parameter A23 bound to: 32'b00000000000000011101001001101100 
+	Parameter A22 bound to: 32'b11111111111101011110100101100010 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'MPC' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc.vhd:5' bound to instance 'current_ctrl' of component 'MPC' [C:/Users/linh9/Desktop/src/Controller.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'MPC' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:40]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_sample' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:5' bound to instance 'uut_sample' of component 'mpc_sample' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'mpc_sample' [C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:33]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_sample' (11#1) [C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd:33]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_predic_ik1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:5' bound to instance 'uut_predic_ik1' of component 'mpc_predic_ik1' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'mpc_predic_ik1' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:35]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_Ciab' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:5' bound to instance 'uut_ciab1' of component 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:42]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_Ciab' (12#1) [C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:42]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut_vectorVk' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:15]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_vecto_kg' (13#1) [C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:15]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut_ik1' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:36]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mpc_iabk1' (14#1) [C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'mpc_predic_ik1' (15#1) [C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd:35]
+INFO: [Synth 8-3491] module 'vector_lien_ke' declared at 'C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:5' bound to instance 'uut_vector_lienke' of component 'vector_lien_ke' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'vector_lien_ke' [C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'vector_lien_ke' (16#1) [C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd:18]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_select_Vk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:5' bound to instance 'uut_selectVk' of component 'mpc_select_Vk1' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'mpc_select_Vk1' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:41]
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut1' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:52]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut2' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:61]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut3' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:70]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut4' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:79]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut5' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:88]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut6' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:97]
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_vecto_kg' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd:5' bound to instance 'uut7' of component 'mpc_vecto_kg' [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'mpc_select_Vk1' (17#1) [C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd:41]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Mpc_PredicIk2' declared at 'C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:5' bound to instance 'uut_predic_ik2' of component 'Mpc_PredicIk2' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'Mpc_PredicIk2' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:73]
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA13 bound to: 34 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter A11 bound to: 16529935 - type: integer 
+	Parameter A12 bound to: 119404 - type: integer 
+	Parameter A21 bound to: 16529935 - type: integer 
+	Parameter A23 bound to: 119404 - type: integer 
+	Parameter A13 bound to: 661150 - type: integer 
+	Parameter A22 bound to: -661150 - type: integer 
+	Parameter e1 bound to: 24 - type: integer 
+	Parameter e2 bound to: 34 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_Ciab' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd:5' bound to instance 'uut_Cia' of component 'mpc_Ciab' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:116]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut1' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:139]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut2' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:155]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut3' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:171]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut4' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:187]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut5' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:203]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut6' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:219]
+	Parameter A14 bound to: 1065627 - type: integer 
+	Parameter eA11 bound to: 24 - type: integer 
+	Parameter eA14 bound to: 24 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'mpc_iabk1' declared at 'C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd:5' bound to instance 'uut7' of component 'mpc_iabk1' [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'Mpc_PredicIk2' (18#1) [C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd:73]
+	Parameter dWidth bound to: 52 - type: integer 
+INFO: [Synth 8-3491] module 'OpCostFunction' declared at 'C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:5' bound to instance 'uut_optg' of component 'OpCostFunction' [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'OpCostFunction' [C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:38]
+	Parameter dWidth bound to: 52 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OpCostFunction' (19#1) [C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MPC' (20#1) [C:/Users/linh9/Desktop/src/MPC/mpc.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Controler' (21#1) [C:/Users/linh9/Desktop/src/Controller.vhd:28]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[15]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[14]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[13]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[12]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[11]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[10]
+WARNING: [Synth 8-3331] design mpc_vecto_kg has unconnected port k[9]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[15]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[14]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[13]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[12]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[11]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[10]
+WARNING: [Synth 8-3331] design vector_lien_ke has unconnected port k_last[9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:56 ; elapsed = 00:11:57 . Memory (MB): peak = 1245.547 ; gain = 1035.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:56 ; elapsed = 00:11:58 . Memory (MB): peak = 1245.547 ; gain = 1035.313
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:07 ; elapsed = 00:12:03 . Memory (MB): peak = 1348.863 ; gain = 1138.629
+85 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1348.863 ; gain = 103.316
+close_design
+close_project
+open_project C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+set_property top Controler [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'Controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_vecto_kg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_iabk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_Ciab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vector_lien_ke
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OpCostFunction
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_select_Vk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_predic_ik1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mpc_PredicIk2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sincoslut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MHTT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fm_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ab2dq
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/srcCLk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srcClk
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sampleIref
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PI
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MPC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/dq2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dq2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FluxModule
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Controler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Controler_behav xil_defaultlib.Controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1537] value 3435921408 is out of target constraint range -2147483648 to 2147483647 [C:/Users/linh9/Desktop/src/PI.vhd:67]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit controler in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'Controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_vecto_kg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_iabk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_Ciab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vector_lien_ke
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OpCostFunction
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_select_Vk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_predic_ik1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mpc_PredicIk2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sincoslut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MHTT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fm_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ab2dq
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/srcCLk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srcClk
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sampleIref
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PI
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MPC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/dq2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dq2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FluxModule
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Controler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Controler_behav xil_defaultlib.Controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1537] value 3435921408 is out of target constraint range -2147483648 to 2147483647 [C:/Users/linh9/Desktop/src/PI.vhd:67]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit controler in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_module_reference {design_1_PI_0_0 design_1_PI_1_0}
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/bd/design_1/design_1.bd'
+Adding cell -- xilinx.com:module_ref:FluxModule:1.0 - FluxModule_0
+Adding cell -- xilinx.com:module_ref:MPC:1.0 - MPC_0
+Adding cell -- xilinx.com:module_ref:sampleIref:1.0 - sampleIref_0
+Adding cell -- xilinx.com:module_ref:dq2ab:1.0 - dq2ab_0
+Adding cell -- xilinx.com:module_ref:PI:1.0 - PI_0
+Adding cell -- xilinx.com:module_ref:PI:1.0 - PI_1
+Successfully read diagram <design_1> from BD file <C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/bd/design_1/design_1.bd>
+INFO: [IP_Flow 19-1972] Upgraded design_1_PI_0_0 from PI_v1_0 1.0 to PI_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded design_1_PI_1_0 from PI_v1_0 1.0 to PI_v1_0 1.0
+Wrote  : <C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/bd/design_1/design_1.bd> 
+upgrade_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1348.863 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1348.863 ; gain = 0.000
+close_bd_design [get_bd_designs design_1]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'Controler' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Controler_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_vecto_kg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_vecto_kg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_iabk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_iabk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_Ciab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_Ciab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/vector_lien_ke.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vector_lien_ke
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/OpCostFunction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OpCostFunction
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_select_Vk1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_select_Vk1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc_predic_ik1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mpc_predic_ik1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/Mpc_PredicIk2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mpc_PredicIk2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/sincoslut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sincoslut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/MHTT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MHTT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/fm_sample.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fm_sample
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/d2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity d2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/ab2dq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ab2dq
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/srcCLk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srcClk
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.srcs/sources_1/new/sampleIref.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sampleIref
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/PI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PI
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MPC/mpc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MPC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/dq2ab.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dq2ab
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FluxModule
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/linh9/Desktop/src/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Controler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto d0979d5cac3e4243a29e475edebbc1a6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Controler_behav xil_defaultlib.Controler -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.srcClk [srcclk_default]
+Compiling architecture arch of entity xil_defaultlib.PI [\PI(kp=1245184,kit=1677721,limit...]
+Compiling architecture arch of entity xil_defaultlib.PI [\PI(kp=175,kit=3204,limitup=5242...]
+Compiling architecture arch of entity xil_defaultlib.dq2ab [\dq2ab(dwidth=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.sampleIref [sampleiref_default]
+Compiling architecture arch of entity xil_defaultlib.fm_sample [\fm_sample(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.ab2dq [\ab2dq(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.MHTT [\MHTT(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.sincoslut [sincoslut_default]
+Compiling architecture arch of entity xil_defaultlib.d2ab [\d2ab(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.FluxModule [fluxmodule_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_sample [\mpc_sample(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.mpc_Ciab [mpc_ciab_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_vecto_kg [\mpc_vecto_kg(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.mpc_iabk1 [mpc_iabk1_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_predic_ik1 [mpc_predic_ik1_default]
+Compiling architecture arch of entity xil_defaultlib.vector_lien_ke [vector_lien_ke_default]
+Compiling architecture arch of entity xil_defaultlib.mpc_select_Vk1 [\mpc_select_Vk1(dwidth=20)\]
+Compiling architecture arch of entity xil_defaultlib.Mpc_PredicIk2 [mpc_predicik2_default]
+Compiling architecture arch of entity xil_defaultlib.OpCostFunction [\OpCostFunction(dwidth=52)\]
+Compiling architecture arch of entity xil_defaultlib.MPC [mpc_default]
+Compiling architecture arch of entity xil_defaultlib.controler
+Built simulation snapshot Controler_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav/xsim.dir/Controler_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan 08 18:20:19 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1348.863 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Controler_behav -key {Behavioral:sim_1:Functional:Controler} -tclbatch {Controler.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source Controler.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Controler_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.863 ; gain = 0.000
+add_force {/Controler/rst} -radix hex {0 0ns}
+add_force {/Controler/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/Controler/Ialpha} -radix hex {1000 0ns}
+add_force {/Controler/Ibeta} -radix hex {600 0ns}
+add_force {/Controler/Ialpha} -radix hex {0 0ns}
+add_force {/Controler/Ibeta} -radix hex {0 0ns}
+add_force {/Controler/w} -radix hex {0 0ns}
+add_force {/Controler/Vdc} -radix hex {1000 0ns}
+add_force {/Controler/PdRef} -radix hex {1000 0ns}
+add_force {/Controler/Wref} -radix hex {0 0ns}
+add_force {/Controler/rst} -radix hex {1 0ns}
+run 1 us
+add_force {/Controler/rst} -radix hex {0 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 08 18:23:09 2020...

@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 08 17:56:28 2020
+# Process ID: 5208
+# Current directory: C:/Users/linh9/Desktop/src/test_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12620 C:\Users\linh9\Desktop\src\test_ctrl\test_ctrl.xpr
+# Log file: C:/Users/linh9/Desktop/src/test_ctrl/vivado.log
+# Journal file: C:/Users/linh9/Desktop/src/test_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PI [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch arch [get_filesets sim_1]
+set_property top_file C:/Users/linh9/Desktop/src/PI.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source PI.tcl
+add_force {/PI/rst} -radix hex {0 0ns}
+add_force {/PI/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/PI/ref} -radix hex {1000 0ns}
+add_force {/PI/y} -radix hex {0 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 ms
+add_force {/PI/ref} -radix dec {-3000 0ns}
+run 1 ms
+run 1 ms
+run 1 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FluxModule [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch arch [get_filesets sim_1]
+set_property top_file C:/Users/linh9/Desktop/src/MHTT/FluxModule.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source FluxModule.tcl
+add_force {/FluxModule/rst} -radix hex {0 0ns}
+add_force {/FluxModule/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/FluxModule/inAlpha} -radix hex {1000 0ns}
+add_force {/FluxModule/inBeta} -radix hex {600 0ns}
+add_force {/FluxModule/inW} -radix hex {600 0ns}
+run 1 ms
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+close_project
+open_project C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Controler [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+update_module_reference {design_1_PI_0_0 design_1_PI_1_0}
+close_bd_design [get_bd_designs design_1]
+launch_simulation
+source Controler.tcl
+add_force {/Controler/rst} -radix hex {0 0ns}
+add_force {/Controler/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/Controler/Ialpha} -radix hex {1000 0ns}
+add_force {/Controler/Ibeta} -radix hex {600 0ns}
+add_force {/Controler/Ialpha} -radix hex {0 0ns}
+add_force {/Controler/Ibeta} -radix hex {0 0ns}
+add_force {/Controler/w} -radix hex {0 0ns}
+add_force {/Controler/Vdc} -radix hex {1000 0ns}
+add_force {/Controler/PdRef} -radix hex {1000 0ns}
+add_force {/Controler/Wref} -radix hex {0 0ns}
+add_force {/Controler/rst} -radix hex {1 0ns}
+run 1 us
+add_force {/Controler/rst} -radix hex {0 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim

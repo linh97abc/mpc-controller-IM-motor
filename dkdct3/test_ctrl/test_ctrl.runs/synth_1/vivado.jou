@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 08 18:06:15 2020
+# Process ID: 11360
+# Current directory: C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.runs/synth_1
+# Command line: vivado.exe -log Controler.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Controler.tcl
+# Log file: C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.runs/synth_1/Controler.vds
+# Journal file: C:/Users/linh9/Desktop/src/test_ctrl/test_ctrl.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Controler.tcl -notrace

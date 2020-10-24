@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jan 09 11:08:55 2020
+# Process ID: 11460
+# Current directory: C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1
+# Command line: vivado.exe -log design_1_encoder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_encoder_0_0.tcl
+# Log file: C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1/design_1_encoder_0_0.vds
+# Journal file: C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_encoder_0_0.tcl -notrace
+Command: synth_design -top design_1_encoder_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2980 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 316.828 ; gain = 106.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_encoder_0_0' [c:/Users/linh9/Desktop/src/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_encoder_0_0/synth/design_1_encoder_0_0.vhd:69]
+	Parameter StateReset bound to: 1'b1 
+	Parameter Tdem_us bound to: 1000 - type: integer 
+	Parameter SoXungEncoder bound to: 1024 - type: integer 
+	Parameter debounce_time bound to: 2 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter Wrange_vongps_x2_15 bound to: 150 - type: integer 
+INFO: [Synth 8-3491] module 'encoder' declared at 'C:/Users/linh9/Desktop/src/encoder/encoder_v0.59.vhd:10' bound to instance 'U0' of component 'encoder' [c:/Users/linh9/Desktop/src/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_encoder_0_0/synth/design_1_encoder_0_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'encoder' [C:/Users/linh9/Desktop/src/encoder/encoder_v0.59.vhd:33]
+	Parameter StateReset bound to: 1'b1 
+	Parameter Tdem_us bound to: 1000 - type: integer 
+	Parameter SoXungEncoder bound to: 1024 - type: integer 
+	Parameter debounce_time bound to: 2 - type: integer 
+	Parameter dWidth bound to: 20 - type: integer 
+	Parameter Wrange_vongps_x2_15 bound to: 150 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'encoder' (1#1) [C:/Users/linh9/Desktop/src/encoder/encoder_v0.59.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'design_1_encoder_0_0' (2#1) [c:/Users/linh9/Desktop/src/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_encoder_0_0/synth/design_1_encoder_0_0.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 354.957 ; gain = 144.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 354.957 ; gain = 144.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 667.297 ; gain = 0.027
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 667.297 ; gain = 457.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 667.297 ; gain = 457.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 667.297 ; gain = 457.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "tmp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "debounce_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_prev" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "p1" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 667.297 ; gain = 457.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "U0/p1" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP U0/s_speed0, operation Mode is: A*(B:0x6aab).
+DSP Report: operator U0/s_speed0 is absorbed into DSP U0/s_speed0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[39]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[38]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[37]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[36]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[35]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[34]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[33]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[32]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[31]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[30]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[29]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[8]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[7]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[6]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[5]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[4]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[3]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[2]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[1]) is unused and will be removed from module design_1_encoder_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/s_speed_reg[0]) is unused and will be removed from module design_1_encoder_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 667.297 ; gain = 457.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|encoder     | A*(B:0x6aab) | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 673.691 ; gain = 463.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 673.691 ; gain = 463.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/linh9/Desktop/src/encoder/encoder_v0.59.vhd:76]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/linh9/Desktop/src/encoder/encoder_v0.59.vhd:85]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    12|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |    14|
+|4     |LUT2    |    54|
+|5     |LUT3    |    18|
+|6     |LUT4    |     5|
+|7     |LUT5    |     1|
+|8     |LUT6    |     6|
+|9     |FDCE    |    68|
+|10    |FDPE    |    10|
+|11    |FDRE    |     3|
+|12    |LDC     |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   193|
+|2     |  U0     |encoder |   192|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 693.027 ; gain = 144.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 693.027 ; gain = 482.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 693.027 ; gain = 459.801
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1/design_1_encoder_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/src/dc11m/project_1/project_1.runs/design_1_encoder_0_0_synth_1/design_1_encoder_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 693.027 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 09 11:09:56 2020...

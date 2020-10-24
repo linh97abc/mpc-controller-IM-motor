@@ -1,0 +1,654 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ADC_0_0/design_1_ADC_0_0.dcp' for cell 'design_1_i/ADC_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_Controler_0_0/design_1_Controler_0_0.dcp' for cell 'design_1_i/Controler_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_SwitchCOntroller_0_0/design_1_SwitchCOntroller_0_0.dcp' for cell 'design_1_i/SwitchCOntroller_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ab2alphabeta_0_0/design_1_ab2alphabeta_0_0.dcp' for cell 'design_1_i/ab2alphabeta_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_datalimit_0_0/design_1_datalimit_0_0.dcp' for cell 'design_1_i/datalimit_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_datalimit_1_0/design_1_datalimit_1_0.dcp' for cell 'design_1_i/datalimit_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_encoder_0_0/design_1_encoder_0_0.dcp' for cell 'design_1_i/encoder_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_fix_clk_i_w_0_0/design_1_fix_clk_i_w_0_0.dcp' for cell 'design_1_i/fix_clk_i_w_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.dcp' for cell 'design_1_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0.dcp' for cell 'design_1_i/ila_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_input_ctrl_0_0/design_1_input_ctrl_0_0.dcp' for cell 'design_1_i/input_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_protect_van_0_0/design_1_protect_van_0_0.dcp' for cell 'design_1_i/protect_van_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_srcClk_0_0/design_1_srcClk_0_0.dcp' for cell 'design_1_i/srcClk_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_0_0/design_1_usample_0_0.dcp' for cell 'design_1_i/usample_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_1_0/design_1_usample_1_0.dcp' for cell 'design_1_i/usample_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_2_0/design_1_usample_2_0.dcp' for cell 'design_1_i/usample_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_3_0/design_1_usample_3_0.dcp' for cell 'design_1_i/usample_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_4_0/design_1_usample_4_0.dcp' for cell 'design_1_i/usample_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_5_0/design_1_usample_5_0.dcp' for cell 'design_1_i/usample_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_6_0/design_1_usample_6_0.dcp' for cell 'design_1_i/usample_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_7_0/design_1_usample_7_0.dcp' for cell 'design_1_i/usample_7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.dcp' for cell 'design_1_i/xlconstant_0'
+INFO: [Netlist 29-17] Analyzing 2554 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1178.324 ; gain = 511.227
+Finished Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_1/U0'
+Finished Parsing XDC File [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_1/U0'
+Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/zybo_z7.xdc]
+Finished Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/zybo_z7.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 80 instances
+
+link_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1192.039 ; gain = 966.895
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1192.039 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:2.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:2.0", from Vivado IP cache entry "74c80b9dae3e4102".
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1225.508 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 260b705a5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.508 ; gain = 33.469
+Implement Debug Cores | Checksum: 1de1fcf9b
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 182bf8bb1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1226.367 ; gain = 34.328
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 162 cells.
+Phase 3 Constant propagation | Checksum: 2945247ae
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:46 . Memory (MB): peak = 1226.367 ; gain = 34.328
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 10963 unconnected nets.
+INFO: [Opt 31-11] Eliminated 12 unconnected cells.
+Phase 4 Sweep | Checksum: 2964ae90d
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:49 . Memory (MB): peak = 1226.367 ; gain = 34.328
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 BUFG optimization | Checksum: 2964ae90d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 1226.367 ; gain = 34.328
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1226.367 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2964ae90d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 1226.367 ; gain = 34.328
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 71 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 37 newly gated: 0 Total Ports: 142
+Ending PowerOpt Patch Enables Task | Checksum: 1c5dbf03e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1c5dbf03e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1557.465 ; gain = 331.098
+INFO: [Common 17-83] Releasing license: Implementation
+64 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:21 . Memory (MB): peak = 1557.465 ; gain = 365.426
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1594c564d
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1e2a549c8
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1e2a549c8
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1e2a549c8
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1085ae5bb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:47 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1085ae5bb
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:48 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1777a5dc7
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1ab911068
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:53 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ab911068
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: facef269
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 160ad543c
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:59 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1120b7ec8
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:00 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1120b7ec8
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:00 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1120b7ec8
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:01 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.534. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 9b7f9534
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:14 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 9b7f9534
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:15 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 9b7f9534
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:15 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 9b7f9534
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:15 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 134a6d2c1
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:15 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 134a6d2c1
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:16 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Ending Placer Task | Checksum: d18f26ce
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:16 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+82 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1557.465 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1557.465 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.280 . Memory (MB): peak = 1557.465 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 1c247088 ConstDB: 0 ShapeSum: b56ab646 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 64cb2fe6
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:33 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 64cb2fe6
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:33 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 64cb2fe6
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 64cb2fe6
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1557.465 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1935b1b2c
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:50 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.763  | TNS=0.000  | WHS=-0.309 | THS=-289.321|
+
+Phase 2 Router Initialization | Checksum: 123f098ad
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:56 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: c2ee7775
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:06 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1701
+ Number of Nodes with overlaps = 93
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: f56e6f82
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:17 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.265  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1463563c8
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:17 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 715933bf
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.265  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 13c0f20cb
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 13c0f20cb
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 13c0f20cb
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 13c0f20cb
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 13c0f20cb
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:19 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 87b25054
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:21 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.265  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 96d5f881
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:21 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 96d5f881
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:21 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.55411 %
+  Global Horizontal Routing Utilization  = 11.4397 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 104415e90
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:22 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 104415e90
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:22 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1f7c32a3b
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:24 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.265  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1f7c32a3b
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:24 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:26 . Memory (MB): peak = 1557.465 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+96 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:13 ; elapsed = 00:01:29 . Memory (MB): peak = 1557.465 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1557.465 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 1607.879 ; gain = 50.414
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1621.898 ; gain = 14.020
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+106 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1660.168 ; gain = 38.270
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 14:40:48 2020...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 210.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2572 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/.Xil/Vivado-9884-DESKTOP-T22NVQ5/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1151.828 ; gain = 491.473
+Finished Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/.Xil/Vivado-9884-DESKTOP-T22NVQ5/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/.Xil/Vivado-9884-DESKTOP-T22NVQ5/dcp/design_1_wrapper.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/.Xil/Vivado-10164-DESKTOP-T22NVQ5/dbg_hub_CV.0/out/xsdbm.xdc:11]
+Finished Parsing XDC File [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/.Xil/Vivado-9884-DESKTOP-T22NVQ5/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1195.090 ; gain = 27.227
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1195.090 ; gain = 27.227
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 80 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1195.090 ; gain = 984.766
+Command: write_bitstream -force -no_partial_bitfile design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__0 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__0 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__1 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__1 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__10 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__10 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__11 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__11 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__12 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__12 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__14 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__14 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__14/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__15 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__15/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__15 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__15/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__16 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__16/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__16 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__16/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__17 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__17/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__17 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__17/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__18 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__18/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__18 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__18/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__19 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__19/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__19 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__19/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__2 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__2 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__20 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__20 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__20/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__21 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__21 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__21/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__22 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__22 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__22/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__23 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__23 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__24 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__24/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__24 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__24/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__25 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__25/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__25 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__25/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__26 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__26/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__26 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__26/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__27 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__27/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__27 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__27/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__28 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__28/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__28 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__28/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__29 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__29/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__29 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__29/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__3 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__3 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__30 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__30/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__30 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__30/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__31 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__31/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__31 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__31/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__32 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__32/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__32 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__32/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__33 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__33/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__33 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__33/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__34 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__34/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__34 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__34/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__4 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__4 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__5 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__5 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__6 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__6 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__7 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__7 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__8 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__8 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__9 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__9 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin13__9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__0 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__0 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__1 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__1 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__10 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__10 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__11 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__11 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__12 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__12 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__13 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__14 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__14 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__14/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__15 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__15/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__15 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__15/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__16 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__16/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__16 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__16/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__2 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__2 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__3 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__3 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__4 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__4 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__5 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__5 input design_1_i/Controler_0/U0/current_ctrl/uut_optg/gmin23__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1459 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:53 ; elapsed = 00:00:49 . Memory (MB): peak = 1653.652 ; gain = 458.563
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 14:42:38 2020...

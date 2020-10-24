@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_ila_0_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_7_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_6_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_usample_5_0_synth_1" LaunchDir="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_ila_0_0_synth_1"/>
+		<Parent Id="design_1_usample_7_0_synth_1"/>
+		<Parent Id="design_1_usample_6_0_synth_1"/>
+		<Parent Id="design_1_usample_5_0_synth_1"/>
+	</Run>
+</Runs>
+

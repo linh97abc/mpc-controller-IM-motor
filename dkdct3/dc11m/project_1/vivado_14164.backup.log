@@ -1,0 +1,435 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 25 14:20:11 2020
+# Process ID: 14164
+# Current directory: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6756 C:\Users\linh9\Desktop\dkdct3\dc11m\project_1\project_1.xpr
+# Log file: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/vivado.log
+# Journal file: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 843.297 ; gain = 215.758
+open_bd_design {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:module_ref:encoder:1.0 - encoder_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:module_ref:ADC:1.0 - ADC_0
+Adding cell -- xilinx.com:module_ref:ab2alphabeta:1.0 - ab2alphabeta_0
+Adding cell -- xilinx.com:module_ref:datalimit:1.0 - datalimit_0
+Adding cell -- xilinx.com:module_ref:srcClk:1.0 - srcClk_0
+Adding cell -- xilinx.com:module_ref:usample:1.0 - usample_0
+Adding cell -- xilinx.com:module_ref:usample:1.0 - usample_1
+Adding cell -- xilinx.com:module_ref:usample:1.0 - usample_2
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:module_ref:fix_clk_i_w:1.0 - fix_clk_i_w_0
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_1
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:module_ref:datalimit:1.0 - datalimit_1
+Adding cell -- xilinx.com:module_ref:SwitchCOntroller:1.0 - SwitchCOntroller_0
+Adding cell -- xilinx.com:module_ref:protect_van:1.0 - protect_van_0
+Adding cell -- xilinx.com:module_ref:usample:1.0 - usample_3
+Adding cell -- xilinx.com:module_ref:usample:1.0 - usample_4
+Adding cell -- xilinx.com:module_ref:input_ctrl:1.0 - input_ctrl_0
+Adding cell -- xilinx.com:module_ref:Controler:1.0 - Controler_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /encoder_0/clk_100M(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /input_ctrl_0/rst(rst) and /ADC_0/i_rs(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /input_ctrl_0/rst(rst) and /ila_0/probe0(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /input_ctrl_0/rst(rst) and /protect_van_0/err(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /input_ctrl_0/rst_w(undef) and /datalimit_0/rst(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /protect_van_0/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_2/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /datalimit_1/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_3/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_4/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_w(undef) and /datalimit_0/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_w(undef) and /usample_1/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_w(undef) and /usample_0/clk(clk)
+Successfully read diagram <design_1> from BD file <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 984.414 ; gain = 86.602
+set_property location {9 2606 666} [get_bd_cells ila_0]
+set_property location {9 2616 719} [get_bd_cells ila_0]
+create_bd_cell -type module -reference usample usample_5
+set_property location {10 2630 404} [get_bd_cells usample_5]
+connect_bd_net [get_bd_pins usample_5/clk] [get_bd_pins fix_clk_i_w_0/sample_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_5/clk(clk)
+create_bd_cell -type module -reference usample usample_6
+create_bd_cell -type module -reference usample usample_7
+set_property location {9 2628 883} [get_bd_cells ila_0]
+set_property location {9 2664 601} [get_bd_cells usample_7]
+connect_bd_net [get_bd_pins usample_6/clk] [get_bd_pins fix_clk_i_w_0/sample_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_6/clk(clk)
+connect_bd_net [get_bd_pins usample_7/clk] [get_bd_pins fix_clk_i_w_0/sample_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /fix_clk_i_w_0/sample_i(undef) and /usample_7/clk(clk)
+connect_bd_net [get_bd_pins usample_5/din] [get_bd_pins SwitchCOntroller_0/GateA]
+connect_bd_net [get_bd_pins usample_6/din] [get_bd_pins SwitchCOntroller_0/GateB]
+connect_bd_net [get_bd_pins usample_7/din] [get_bd_pins SwitchCOntroller_0/GateC]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.C_PROBE19_TYPE {1} CONFIG.C_PROBE18_TYPE {1} CONFIG.C_PROBE17_TYPE {1} CONFIG.C_PROBE16_TYPE {1} CONFIG.C_PROBE19_WIDTH {10} CONFIG.C_PROBE18_WIDTH {10} CONFIG.C_PROBE17_WIDTH {10} CONFIG.C_NUM_OF_PROBES {20}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins usample_5/dout] [get_bd_pins ila_0/probe17]
+connect_bd_net [get_bd_pins usample_6/dout] [get_bd_pins ila_0/probe18]
+connect_bd_net [get_bd_pins usample_7/dout] [get_bd_pins ila_0/probe19]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {8192}] [get_bd_cells ila_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE17_WIDTH(10) on '/ila_0' with propagated value(20). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE18_WIDTH(10) on '/ila_0' with propagated value(20). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE19_WIDTH(10) on '/ila_0' with propagated value(20). Command ignored
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/usample_5/din'(20) to net 'SwitchCOntroller_0_GateA'(10) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/usample_6/din'(20) to net 'SwitchCOntroller_0_GateB'(10) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/usample_7/din'(20) to net 'SwitchCOntroller_0_GateC'(10) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/ila_0/probe17'(10) to net 'usample_5_dout'(20) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/ila_0/probe18'(10) to net 'usample_6_dout'(20) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/ila_0/probe19'(10) to net 'usample_7_dout'(20) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+startgroup
+set_property -dict [list CONFIG.dWidth {10}] [get_bd_cells usample_5]
+endgroup
+startgroup
+set_property -dict [list CONFIG.dWidth {10}] [get_bd_cells usample_6]
+endgroup
+startgroup
+set_property -dict [list CONFIG.dWidth {10}] [get_bd_cells usample_7]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run design_1_ila_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block encoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ADC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fix_clk_i_w_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block input_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ab2alphabeta_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block datalimit_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block srcClk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SwitchCOntroller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block protect_van_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block datalimit_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Controler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usample_7 .
+Exporting to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [HDL 9-1061] Parsing VHDL file "c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_5_0/synth/design_1_usample_5_0.vhd" into library xil_defaultlib [c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_usample_5_0/synth/design_1_usample_5_0.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd" into library xil_defaultlib [C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/usample.vhd:1]
+[Wed Mar 25 14:29:44 2020] Launched design_1_ila_0_0_synth_1, design_1_usample_7_0_synth_1, design_1_usample_6_0_synth_1, design_1_usample_5_0_synth_1...
+Run output will be captured here:
+design_1_ila_0_0_synth_1: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_ila_0_0_synth_1/runme.log
+design_1_usample_7_0_synth_1: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_7_0_synth_1/runme.log
+design_1_usample_6_0_synth_1: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_6_0_synth_1/runme.log
+design_1_usample_5_0_synth_1: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/design_1_usample_5_0_synth_1/runme.log
+[Wed Mar 25 14:29:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1363.617 ; gain = 248.316
+launch_runs impl_1 -jobs 2
+[Wed Mar 25 14:34:37 2020] Launched impl_1...
+Run output will be captured here: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Mar 25 14:40:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1369.426 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A78277A
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210351A78277A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351A78277A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A78277A
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CAPTURE_COMPARE_VALUE eq1'bR [get_hw_probes design_1_i/fix_clk_i_w_0_sample_i -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+set_property CAPTURE_COMPARE_VALUE eq1'bX [get_hw_probes design_1_i/fix_clk_i_w_0_sample_w -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Mar-25 14:47:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Mar-25 14:47:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Mar-25 14:48:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Mar-25 14:48:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Mar-25 14:49:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Mar-25 14:49:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Mar-25 14:49:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Mar-25 14:49:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Mar-25 14:49:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Mar-25 14:49:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Mar-25 14:49:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Mar-25 14:50:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Mar-25 14:51:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Mar-25 14:51:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_i/usample_7_dout} {design_1_i/usample_6_dout} {design_1_i/usample_5_dout} }
+write_hw_ila_data -force my_waveform.zip
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+write_hw_ila_data -force my_waveform.zip
+ERROR: [Labtoolstcl 44-9] Current hw_ila_data is not set and <hw_ila_data> option is empty.
+write_hw_ila_data -force my_waveform.zip
+ERROR: [Labtoolstcl 44-9] Current hw_ila_data is not set and <hw_ila_data> option is empty.
+write_hw_ila_data
+ERROR: [Common 17-163] Missing value for option 'file', please type 'write_hw_ila_data -help' for usage info.
+help write_hw_ila_data
+write_hw_ila_data
+
+Description: 
+Write hardware ILA data to a file
+
+Syntax: 
+write_hw_ila_data  [-force] [-csv_file] [-vcd_file] [-quiet] [-verbose] <file>
+                   [<hw_ila_data>] [<hw_ila_data>]
+
+Returns: 
+Name of the output file
+
+Usage: 
+  Name             Description
+  ----------------------------
+  [-force]         Overwrite existing file
+  [-csv_file]      Export CSV format file only
+  [-vcd_file]      Export VCD format file only
+  [-quiet]         Ignore command errors
+  [-verbose]       Suspend message limits during command execution
+  <file>           hardware ILA data file name
+  [<hw_ila_data>]  hardware ILA data object
+                   Default: Current hardware ILA data
+
+Categories: 
+Hardware
+
+Description:
+
+  Write the ILA debug core sample data, stored in the specified hw_ila_data
+  object, to a binary file on the disk.
+
+  A hw_ila_data object is created when the hw_ila is triggered on the
+  hw_device, or by the upload_hw_ila_data command when moving the captured
+  data from the physical FPGA device, hw_device.
+
+  The write_hw_ila_data lets you write the data of the hw_ila_data object to
+  a binary file on the disk for later review. You can read the ILA debug core
+  data back into the Vivado logic analyzer using the read_hw_ila_data
+  command, which creates a new hw_ila_data object.
+
+  This command returns the name of the file written, or returns an error if
+  it fails.
+
+Arguments:
+
+  -force - (Optional) Overwrite an existing file of the same name if one
+  exists.
+
+  -csv_file - (Optional) Export a comma-separated values (CSV) file only.
+  This configures the write_hw_ila_data command to export the ILA data in the
+  form of a CSV file that can be used to import into a spreadsheet or
+  third-party application, rather than the default binary ILA file format.
+
+  -vcd_file - (Optional) Export a value change dump (VCD) file only. This
+  configures the write_hw_ila_data command to export the ILA data in the form
+  of a VCD file that can be used to import into a third-party application or
+  viewer, rather than the default binary ILA file format.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <file> - (Required) The filename of the ILA data file to write. The default
+  file extension for an ILA data file is .ila. The default file extension for
+  -csv_file is .csv, and for -vcd_file is .vcd.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+  <hw_ila_data> - (Optional) The hardware ILA data to write to the specified
+  file. The hw_ila_data must be specified as an object, as returned by the
+  get_hw_ila_datas or the current_hw_ila_data commands. If no hw_ila_data
+  object is specified, the current hw_ila_data is written to the specified
+  file.
+
+Example:
+
+  The following example uploads the data from the hw_ila debug core into a
+  hw_ila_data object, and then writes that data object to the specified ILA
+  data file, overwriting an existing file if one exists:
+
+    write_hw_ila_data -force design1_ila_data [upload_hw_ila_data hw_ila_1]
+
+  This example triggers the hw_ila, then writes the captured hw_ila_data to a
+  CSV file:
+
+    run_hw_ila hw_ila_1 
+    write_hw_ila_data -csv_file C:/Data/design1_ila_data [current_hw_ila_data]
+
+See Also:
+
+   *  current_hw_ila
+   *  current_hw_ila_data
+   *  get_hw_ilas
+   *  get_hw_ila_datas
+   *  run_hw_ila
+   *  upload_hw_ila_data
+   *  wait_on_hw_ila
+write_hw_ila_data -force my_waveform.zip hw_ila_1
+ERROR: [Labtoolstcl 44-136] Invalid option value 'hw_ila_1' specified for 'hw_ila_data'.
+current_hw_ila_data
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+open_bd_design {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {design_1_i/usample_2_dout} }
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Mar-25 15:40:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Mar-25 15:40:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210351A78277A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351A78277A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A78277A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1504.789 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A78277A
+set_property PROGRAM.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1507.367 ; gain = 2.578
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Mar-25 15:42:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Mar-25 15:42:33
+upload_hw_ila_data: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1507.367 ; gain = 0.000
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+add_wave -into {hw_ila_data_1.wcfg} -radix dec { {design_1_i/Controler_0_IaRef_out} {design_1_i/Controler_0_IbRef_out} {design_1_i/usample_3_dout} {design_1_i/usample_4_dout} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {design_1_i/ADC_0_data_adc_A} {design_1_i/ADC_0_data_adc_B} {design_1_i/Controler_0_Pd_out} {design_1_i/ab2alphabeta_0_alpha} {design_1_i/ab2alphabeta_0_beta} {design_1_i/datalimit_0_data_out} {design_1_i/encoder_0_speed} {design_1_i/fix_clk_i_w_0_sample_i} {design_1_i/fix_clk_i_w_0_sample_w} {design_1_i/usample_0_dout} {design_1_i/usample_1_dout} {design_1_i/usample_5_dout} {design_1_i/usample_6_dout} {design_1_i/usample_7_dout} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {design_1_i/usample_2_dout} }
+write_hw_ila_data -force my_waveform.zip hw_ila_data_1
+c:/Users/linh9/Desktop/dkdct3/dc11m/project_1/my_waveform.zip
+open_bd_design {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+save_wave_config {C:/Users/linh9/Desktop/dkdct3/dc11m/project_1/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 17:14:08 2020...
